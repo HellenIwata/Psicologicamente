@@ -1,0 +1,343 @@
+/*Início Estilização a página curiosidades*/
+/*Zerando as margens e espaçamento do página*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Estilizando o container principal*/
+.containerPrincip{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    background-color: #DFE4EB;
+}
+body{
+    overflow-x:hidden ;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    color: #6ca89e;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+a{
+    color: #000;
+}
+
+    /*Estilizando o cabeçalho */
+    .cabecalho{
+        height: 5.6rem;
+        background-color: #C5F9F0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
+    }
+
+        /*Estilo do logo*/
+        .logoCabecalho{
+            height: 5.3rem;
+            width: 5.3rem;
+            position: relative;
+            overflow: hidden;
+        }
+                .logoCabecalho img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+        /*Estilo do menu de navegação*/
+        .menu{
+            display: flex;
+        }
+            .menu li{
+                margin-left: 1rem;
+            } 
+            .menu li:nth-child(2){
+                display: flex;
+                align-items: center;
+            }
+            .menu li:nth-child(2) i{
+             font-size: .9rem;   
+            }
+
+            .menu li:nth-child(2):hover .boxCuriosidades {
+                visibility: visible;
+                
+                /* opacity: 1; */
+            }
+            
+                .menu li a{
+                    display: block;
+                    padding: 5px;
+                }
+                    .menu li a:hover{
+                        color :#6ca89e;
+                    }
+                    
+                    /*Menu suspenso*/
+                    .menu .boxCuriosidades{
+                        position: absolute;
+                        top: 90px;
+                        right: 100px;
+                        background-color: #6ca89e;
+                        width: 25%;
+                        padding: 10px;
+                        visibility: hidden;
+                        /* opacity: 0; */
+                        transition: .3s;
+                        z-index: 1;
+                    }
+                    .menu .boxCuriosidades::before{
+                        content: " ";
+                        position: absolute;
+                        top: -20px;
+                        right: 29%;
+                        width: 25px;
+                        height: 20px;
+                        background-color: #6ca89e;
+                        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                    }
+                        .menu .boxCuriosidades ul {
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 1rem;
+                        }
+
+                            .menu .boxCuriosidades ul li{
+                                border-bottom: solid 2px #fff;
+                                padding-bottom: 0.2rem;
+                                align-items: center;
+                                font-size: 1rem;
+                            }
+                                .menu .boxCuriosidades ul li a:hover{
+                                    color: #fff;
+                                }
+                                    .cabecalho button{
+                                        display: none;
+                                    }
+
+    /*Estilo da seção menu assunto
+     .menuDeAssuntos{
+        height: 353px;
+        width: 80%; 
+        margin-top: 106px; 
+        margin: auto;        
+        position: center; 
+        display: flex;  
+         flex-wrap: wrap;  
+        justify-content: space-evenly;
+        background-color: tomato;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+        .containerFlex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        #legendaMenuAssunto{
+            margin-top: 36px;
+            margin-left: 179.9px;
+            margin-right: 179.9px; 
+            width: 100%;
+            flex: none;
+            text-align: justify;
+        }
+
+        Estilo do menu curiosidades sobre a profissão e história da psicologia
+        #curiosidadesSobrePsico{
+            flex: none;
+            margin-left: 90px;
+            text-align: justify;
+            background-color: #DFE4EB;
+        }
+            
+            #curiosidadesSobrePsico h1{
+                text-align: center;
+                font-size: 1.8rem;
+            }
+            #curiosidadesSobrePsico ul li{
+                margin-left: 10%;
+                margin-top: 5%;
+                text-align: justify;
+            }
+                    #curiosidadesSobrePsico a:hover{
+                        color: #6ca89e;
+                        opacity: 1;
+                    }
+
+        Estilo do menu curiosidades gerais da psicologia
+        .curiosidadesGerais{
+            
+            margin-left: 90px;
+            text-align: justify;
+            background-color: #DFE4EB;
+            
+        }
+            .curiosidadesGerais h1{
+                text-align: center;
+            }
+            .curiosidadesGerais ul li{}
+                .curiosidadesGerais a{} */
+
+    /*Estilo doa abertura do popUp da página*/
+    .navConteudPrincip{
+        width:100%;
+        height: auto;
+        position: relative;
+        float: left;
+    }
+        /*Estilo do popUp*/
+        .navTexto{
+            width:31%;
+            margin: 1%;
+            position: relative;
+            float: left;
+            text-align: justify;
+        }
+            .navTexto a:hover{
+                color: #6ca89e;
+            }
+            .navTexto img{}
+            .navTexto h1{}
+            .navTexto p{}
+            .navTexto .btnSaibaMais{
+                border: none;
+                border-radius: 4px;
+                padding: 8px 15px;
+                background-color: #6ca89e;
+                font-size: 1rem;
+                transition: linear 400ms;
+            }
+            .navTexto .btnSaibaMais:hover{
+                background-color: #a4e2d7;
+            }
+                .navTexto .btnSaibaMais a{
+                    color: #fff;
+                }
+
+    /*Estilo do conteúdo da página*/
+    .conteudo {}
+
+        /*Estilo da abertura do conteúdo*/
+        .aberturaDeConteudo {}
+            .home {}
+                .home a {}
+                .home h2 {}
+                .home p {}
+                    .home ul li{}  
+                        .fechar{}
+                        .fechar:hover{}
+
+                        /*Estilo da area de atuação especificia*/ 
+                        .atuacaoEspecifica{}
+                            .atuacaoEspecifica p{}
+                            .atuacaoEspecifica ul li{}
+                                .atuacaoEspecifica ol li{}
+
+                        /*Estilo dos exercícios físicos*/
+                        .exercicios{}
+                            .exercicios h4{}
+                            .exercicios ul li{}
+                            .exercicios p{}
+                            .exercicios ol li{}
+
+    /*Estilizando o rodapé*/
+    .rodape{
+        height: 151px;
+        width: 1799px;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+        background-color: #C5F9F0;
+    }
+
+        /*Estilo do logo do rodapé*/
+        .logoRodape{}
+            .logoRodape img{}
+        
+        /*Estilo dos links para as redes sociais do rodapé*/
+        .redesSociais{}
+            .redesSociais h5{}
+            .redesSociais a{}
+                .redesSociais a:hover{}
+                .redesSociais img{}
+        
+        /*Estilo do mapa do site*/
+        .mapaSite{}
+            .mapaSite ul li{}
+                .mapaSite a{}
+                    .mapaSite a:hover{}
+        
+        /*Estilo da seção criadoras*/
+        .criadoras{}
+            .criadoras h5{}
+            .criadoras ul li {}
+
+    /*Aplicando responsividade na página*/
+    @media only screen and (max-width:600px){
+        .cabecalho button{
+            display: block;
+            border: none;
+            background: none;
+            outline: none;
+        }
+        .cabecalho #toggle{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            background:#6ca89e;
+        }
+        .cabecalho nav{
+            display: none;
+        }
+        .cabecalho #toggle::before{
+            content: " ";
+            position: absolute;
+            width: 25px;
+            height: 2px;
+            background: #fff;
+            box-shadow: 0 10px 0 #fff;
+            transform: translateY(-10px);
+            transition: .2s;
+        }
+        .cabecalho #toggle::after{
+            content: " ";
+            position: absolute;
+            width: 25px;
+            height: 2px;
+            background: #fff;
+            transform: translateY(10px);
+            transition: .2s;
+        }
+        .cabecalho #toggle.ativo::before{
+            transform: translateY(0) rotate(45deg);
+            box-shadow: 0 0 0 #fff;
+            
+        }
+        .cabecalho #toggle.ativo::after{
+            transform: translateY(0) rotate(-45deg);
+        }
+    }
+
+    
+/*Fim estilização página Curiosidades*/
