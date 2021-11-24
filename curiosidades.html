@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./CSS/curiosidades.css">
+        <script src="https://kit.fontawesome.com/de94b6f5a5.js" crossorigin="anonymous"></script>
         <title>Curiosidades sobre a psicologia</title>
     </head>
     <body>
@@ -13,48 +14,33 @@
 
             <!--Início do cabecalho-->
             <header class="cabecalho">
-                <!--Início do menú de navegação-->
-                <nav class="cabecalhoMenuNav">
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="curiosidades.html">Curiosidades</a></li>
-                        <li><a href="locais.html">Locais de atendimento</a></li>
-                    </ul>
-                </nav>
-                <!--Fim do menú de navegação-->
 
                 <!--Inserindo o logo no cabeçalho-->
                 <figure class="logoCabecalho">
                     <a href="curiosidades.html"><img src="./IMG/logoSite.png" alt="Logo do Psicologicamente"></a>
                 </figure>
+                
+                <!--Início do menú de navegação-->
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="curiosidades.html">Curiosidades</a><a href="#listCuriosidades"><i class="fas fa-chevron-down"></i></a>
+                            <div class="boxCuriosidades">
+                                <ul id="listCuriosidades" class="listCuriosidades">
+                                    <li><a href="#abrirHistoriaPsic">História da psicologia</a></li>
+                                    <li><a href="#abrirAreasAtuacao">Áreas de atuação do psicólogo</a></li>
+                                    <li><a href="#abrirTiposDeTranstornos">Transtornos e distúrbios mentais</a></li>
+                                    <li><a href="#abrirTiposDeTerapia">Terapias existentes</a></li>
+                                    <li><a href="#abrirExerciciosVsSaude">Exercícios físicos e mentais</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="locais.html">Locais de atendimento</a></li>
+                    </ul>
+                </nav>
+                <!--Fim do menú de navegação-->
+                <span id="toggle"></span>
             </header>
-
-            <!--Início do menú de assuntos-->
-            <section class="menuDeAssuntos">
-                <p>Você pode navegar sobre o assunto interessado clicando nos links abaixo ou se preferir pode rolar a página e conhecer sobre as principais infromações da psicologia.</p>
-
-                <!--Início dos links sobre curiosidades sobre a profissão e a história da psicologia-->
-                <div class="curiosidadesSobrePsico">
-                    <h1>Curiosidades sobre a História e Áreas de atuação da psicologia</h1>
-                    <ul>
-                        <li><a href="#abrirHistoriaPsic">História da psicologia</a></li>
-                        <li><a href="#abrirAreasAtuacao">Áreas de atuação do psicólogo</a></li>
-                    </ul>
-                </div>
-                <!--Fim dos links sobre a profissão e a história da psicologia-->
-
-                <!--Início dos links sobre curiosidades gerais: tipos de transtornos; tipos de terapias e os exercícios físicos que pode ajudar a saúde mental-->
-                <div class="curiosadadesGerais">
-                    <h1>Curiosidades sobre demais assuntos da psicologia</h1>
-                    <ul>
-                        <li><a href="#abrirTiposDeTranstornos">Quais são os tipos de transtornos e distúrbios mentias?</a></li>
-                        <li><a href="#abrirTiposDeTerapia">Quais são os tipos de terapias existentes?</a></li>
-                        <li><a href="#abrirExerciciosVsSaude">Quais são os tipos de exercícios que podem nos ajudar a melhorar a nossa saúde mental?</a></li>
-                    </ul>
-                </div>
-                <!--Fim dos links sobre as curiosidades gerais-->
-            </section>
-            <!--fim do menú assunto-->
 
             <!--Início da seção navegação do conteúdo principal da aplicação-->
             <section class="navConteudPrincip">
@@ -72,20 +58,7 @@
                 <div class="navTexto">
                     <img src="./IMG/bannerAreasAtuac.png" alt="Banner do conteúdo da áreas de atuação">
                     <h1>Áreas de atuação de um psicólogo</h1>
-                    <p>O psicologo formado pode atuar em qualquer área da psicologia, como por exemplo:</p>
-                    <ul>
-                        <li><a href="#neuropsicologia">Neuropsicologia;</a></li>
-                        <li><a href="#psicologiaClinica">Psicologia clínica;</a></li>
-                        <li><a href="#psicologiaEscolar">Psicologia escolar/educacional;</a></li>
-                        <li><a href="#psicologiaEsportiva">Psicologia esportiva;</a></li>
-                        <li><a href="#psicologiaHospitalar">Psicologia hospitalar;</a></li>
-                        <li><a href="#psicologiaJuridica">Psicologia jurídica;</a></li>
-                        <li><a href="#psicologiaOrganizacional">Psicologia do trabalho/organizações;</a></li>
-                        <li><a href="#psicologiaSocial">Psicologia social;</a></li>
-                        <li><a href="#psicologiaDoTransito">Psicologia de trânsito;</a></li>
-                        <li><a href="#psicomotricidade">Psicomotricidade;</a></li>
-                        <li><a href="#psicopedagogia">Psicopedagogia.</a></li>
-                    </ul>
+                    <p>O psicologo formado pode atuar em qualquer área da psicologia, como por exemplo: <a href="#neuropsicologia">neuropsicologia</a>, <a href="#psicologiaClinica">psicologia clínica</a>, <a href="#psicologiaEscolar">psicologia escolar/educacional</a>, <a href="#psicologiaEsportiva">psicologia esportiva</a>, <a href="#psicologiaHospitalar">psicologia hospitalar</a>, <a href="#psicologiaJuridica">psicologia jurídica</a>, <a href="#psicologiaOrganizacional">psicologia do trabalho/organizações</a>, <a href="#psicologiaSocial">psicologia social</a>, <a href="#psicologiaDoTransito">Psicologia de trânsito</a>, <a href="#psicomotricidade">psicomotricidade</a>, <a href="#psicopedagogia">psicopedagogia.</a></p>
                     <button class="btnSaibaMais"><a href="#abrirAreasAtuacao">Leia mais</a></button>
                 </div>
                 <!--Fim PopUp áreas de ataução-->
@@ -124,19 +97,25 @@
             <!--Início conteúdo da aplicação-->
             <section class="conteudo">
                 <div id="abrirHistoriaPsic" class="aberturaDeConteudo">
-                    <h2>História da Psicologia</h2>
-                    <p>A Psicologia não surgiu diretamente como uma ciência, ela começou como um ramo da filosofia e continuou por cerca de 2000 anos antes de emergir como uma ciência. A psicologia começou com o resultado da curiosidade dos cosmólogos para entender sobre as experiências místicas e atividades de pessoas e eventos. Estes incluem as suas experiências na vida, sonhos, vida materialista, os impulsos que têm e peculiaridades no comportamento das pessoas em diferentes situações.</p>
+                    <div class="home">
+                        <a href="#fechar" class="fechar">X</a>
+                        <h2>História da Psicologia</h2>
 
-                    <p>O termo psicologia foi encontrado pela primeira vez em livros filosóficos do século XVI, formada de duas palavras gregas: ‘<i>psique</i>’ (alma) e ‘<i>ogos</i>’ (Doutrina). Por alma, entende-se como o princípio subjacente de todos os fenômenos da vida mental e espiritual.</p>
+                        <p>A Psicologia não surgiu diretamente como uma ciência, ela começou como um ramo da filosofia e continuou por cerca de 2000 anos antes de emergir como uma ciência. A psicologia começou com o resultado da curiosidade dos cosmólogos para entender sobre as experiências místicas e atividades de pessoas e eventos. Estes incluem as suas experiências na vida, sonhos, vida materialista, os impulsos que têm e peculiaridades no comportamento das pessoas em diferentes situações.</p>
 
-                    <p>O que conhecemos por psicologia tem participado da vida cotidiana com importantes contribuições dos médicos, a psicologia diz respeito à vida mental, sendo uma função permanente do cérebro para compreendermos os mistérios e o funcionamento da mente humana. Ela está dividida em diferentes tópicos, com o intuito de entender o processo mental, neural e cultural, além de questões que envolvem desde o nascimento com a introdução de novas ideias, perspectivas e teorias que impactam até hoje as pesquisas dentro até a morte dos seres humanos, a partir disso a psicologia continua em constante evolução.</p>
+                        <p>O termo psicologia foi encontrado pela primeira vez em livros filosóficos do século XVI, formada de duas palavras gregas: ‘<i>psique</i>’ (alma) e ‘<i>ogos</i>’ (Doutrina). Por alma, entende-se como o princípio subjacente de todos os fenômenos da vida mental e espiritual.</p>
+
+                        <p>O que conhecemos por psicologia tem participado da vida cotidiana com importantes contribuições dos médicos, a psicologia diz respeito à vida mental, sendo uma função permanente do cérebro para compreendermos os mistérios e o funcionamento da mente humana. Ela está dividida em diferentes tópicos, com o intuito de entender o processo mental, neural e cultural, além de questões que envolvem desde o nascimento com a introdução de novas ideias, perspectivas e teorias que impactam até hoje as pesquisas dentro até a morte dos seres humanos, a partir disso a psicologia continua em constante evolução.</p>
+                    </div>
                 </div>
 
                 <div id="abrirAreasAtuacao" class="aberturaDeConteudo">
-                    <h2>Áreas de atuação do psicólogo</h2>
+                    <div class="home">
+                        <a href="#fechar" class="fechar">X</a>
+                        <h2>Áreas de atuação do psicólogo</h2>
                     <p>O psicólogo formado pode atuar em qualquer área da psicologia, segundo a Resolução CFP 13/2007, como na psicologia clínica, psicologia escolar/educacional, psicologia do esporte, psicologia hospitalar, psicologia jurídica, neuropsicologia, psicologia organizacional e do trabalho, psicomotricidade; psicopedagogia; psicologia social e psicologia de trânsito.</p>
                     <ul>
-                        <div id="neuropsicologia">
+                        <div id="neuropsicologia" class="atuacaoEspecifica">
                             <li>Neuropsicologia</li>
                                 <p>Os objetivos práticos são levantar dados clínicos que permitam diagnosticar e estabelecer tipos de intervenção, de reabilitação particular e específica para indivíduos e grupos de pacientes em condições nas quais:</p>
                                     <ol>
@@ -147,12 +126,12 @@
                                 <p> Além do diagnóstico, a Neuropsicologia e sua área interligada de Reabilitação Neuropsicológica visam realizar as intervenções necessárias junto ao paciente, para que possam melhorar, compensar, contornar ou adaptar-se às dificuldades; junto aos familiares, para que atuem como coparticipantes do processo reabilitativo; junto a equipes multiprofissionais e instituições acadêmicas e profissionais, promovendo a cooperação na inserção ou reinserção de tais indivíduos na comunidade quando possível, ou ainda, na adaptação individual e familiar quando as mudanças nas capacidades do paciente forem mais permanentes ou a longo prazo.</p>
                         </div>
 
-                        <div id="psicologiaClinica">
+                        <div id="psicologiaClinica" class="atuacaoEspecifica">
                             <li>Psicologia clínica</li>
                             <p>O especialista participa de programas de atenção primária em centros e postos de saúde na comunidade, organizando grupos específicos na prevenção de doenças ou no desenvolvimento de formas de lidar com problemas específicos já instalados, procurando evitar seu agravamento em contribuir ao bem-estar psicológico. Acompanha programas de pesquisa, treinamento e desenvolvimento de políticas de saúde mental, participando de sua elaboração, coordenação, implementação e supervisão, para garantir a qualidade da atenção à saúde mental em nível de macro e microssistema. Participa de instituições específicas de saúde mental, como hospitais-dia, unidades psiquiátricas e outros, podendo intervir em quadros psicopatológicos, tanto individual como grupalmente, auxiliando no diagnóstico e no esquema terapêutico proposto em equipe. Atua no estudo, diagnóstico e prognóstico em situações de crise, em problemas do desenvolvimento ou em quadros psicopatológicos, utilizando, para tal, procedimentos de diagnóstico psicológico tais como: entrevista, utilização de técnicas de avaliação psicológica e outros.</p>
                         </div>
 
-                        <div id="psicologiaEscolar">
+                        <div id="psicologiaEscolar" class="atuacaoEspecifica">
                             <li>Psicologia escolar/educacional</li>
                             <p>O especialista em conjunto com a equipe, colabora com o corpo docente e técnico na elaboração, implantação, avaliação e reformulação de currículos, de projetos pedagógicos, de políticas educacionais e no desenvolvimento de novos procedimentos educacionais. No âmbito administrativo, contribui na análise e intervenção no clima educacional, buscando melhor funcionamento do sistema que resultará na realização dos objetivos educacionais. Para isso realiza tarefas como, por exemplo:</p>
                                 <ol>
@@ -161,7 +140,7 @@
                                 </ol>
                         </div>
 
-                        <div id="psicologiaEsportiva">
+                        <div id="psicologiaEsportiva" class="atuacaoEspecifica">
                             <li>Psicologia esportiva</li>
                             <p>A atuação do psicólogo do esporte está voltada tanto para o esporte de alto rendimento, ajudando atletas, técnicos e comissões técnicas a fazerem uso de princípios psicológicos para alcançar um nível ótimo de saúde mental, maximizar rendimento e otimizar a performance, quanto para a identificação de princípios e padrões de comportamentos de adultos e crianças participantes de atividades físicas.</p>
                                 <ul>
@@ -171,14 +150,14 @@
                                 </ul>
                         </div>
                         
-                        <div id="psicologiaHospitalar">
+                        <div id="psicologiaHospitalar" class="atuacaoEspecifica">
                             <li>Psicologia hospitalar</li>
                             <p>O especialista promove intervenções direcionadas à relação médico/paciente, paciente/família, e paciente/paciente e do paciente em relação ao processo do adoecer, hospitalização e repercussões emocionais que emergem neste processo.</p>
                             <p>No trabalho com a equipe multidisciplinar, preferencialmente interdisciplinar, participa de decisões em relação à conduta a ser adotada pela equipe, objetivando promover apoio e segurança ao paciente e família, aportando informações pertinentes à sua área de atuação, bem como na forma de grupo de reflexão, no qual o suporte e manejo estão voltados para possíveis dificuldades operacionais e/ou subjetivas dos membros da equipe.</p>
                             <p>Oferece e desenvolve atividades em diferentes níveis de tratamento, tendo como sua principal tarefa a avaliação e acompanhamento de intercorrências psíquicas dos pacientes que estão ou serão submetidos a procedimentos médicos, visando basicamente a promoção e/ou a recuperação da saúde física e mental.</p>
                         </div>
 
-                        <div id="psicologiaJuridica">
+                        <div id="psicologiaJuridica" class="atuacaoEspecifica">
                             <li>Psicologia jurídica</li>
                             <p>O especialista atua como perito judicial nas varas cíveis, criminais, Justiça do Trabalho, da família, da criança e do adolescente, elaborando laudos, pareceres e perícias, para serem anexados aos processos, a fim de realizar atendimento e orientação a crianças, adolescentes, detentos e seus familiares ; orienta a administração e os colegiados do sistema penitenciário sob o ponto de vista psicológico, usando métodos e técnicas adequados, para estabelecer tarefas educativas e profissionais que os internos possam exercer nos estabelecimentos penais.</p>
                             <p>Realiza atendimento psicológico a indivíduos que buscam a Vara de Família:</p>
@@ -191,19 +170,19 @@
                                 <p>Avalia as condições intelectuais e emocionais de crianças, adolescentes e adultos em conexão com processos jurídicos, seja por deficiência mental e insanidade, testamentos contestados, aceitação em lares adotivos, posse e guarda de crianças, aplicando métodos e técnicas psicológicas e/ou de psicometria, para determinar a responsabilidade legal por atos criminosos</p>
                         </div>
 
-                        <div id="psicologiaOrganizacional">
+                        <div id="psicologiaOrganizacional" class="atuacaoEspecifica">
                             <li>Psicologia do trabalho/organizações</li>
                             <p>O especialista atua em atividades relacionadas a análise e desenvolvimento organizacional, ação humana nas organizações, desenvolvimento de equipes, consultoria organizacional, seleção, acompanhamento e desenvolvimento de pessoal, estudo e planejamento de condições de trabalho, estudo e intervenção dirigidos à saúde do trabalhador.</p>
                             <p> Utiliza métodos e técnicas da psicologia aplicada ao trabalho, como entrevistas, testes, provas, dinâmicas de grupo etc. para subsidiar as decisões na área de recursos humanos como: promoção, movimentação de pessoal, incentivo, remuneração de carreira, capacitação e integração funcional e promover, em consequência, a autorrealização no trabalho.</p>
                             <p>Planeja e desenvolve ações destinadas a equacionar as relações de trabalho, o sentido de maior produtividade e da realização pessoal dos indivíduos e grupos inseridos nas organizações, estimulando a criatividade, para buscar melhor qualidade de vida no trabalho. Participa de programas e/ou atividades na área da saúde e segurança do trabalho, subsidiando os quanto a aspectos psicossociais para proporcionar melhores condições ao trabalhador.</p>
                         </div>
 
-                        <div id="psicologiaSocial">
+                        <div id="psicologiaSocial" class="atuacaoEspecifica">
                             <li>Psicologia social</li>
                             <p>Seu trabalho envolve proposições de políticas e ações relacionadas à comunidade em geral e aos movimentos sociais de grupos e ações relacionadas à comunidade em geral e aos movimentos sociais de grupos étnico-raciais, religiosos, de gênero, geracionais, de orientação sexual, de classes sociais e de outros segmentos socioculturais, com vistas à realização de projetos da área social e/ou definição de políticas públicas.</p>                            
                         </div>
 
-                        <div id="psicologiaDoTransito">
+                        <div id="psicologiaDoTransito" class="atuacaoEspecifica">
                             <li>Psicologia de trânsito</li>
                             <p>O especialista desenvolve estudos de campo e em laboratório:</p>
                                 <ul>
@@ -217,143 +196,150 @@
                                 </ul>
                         </div>  
 
-                        <div id="psicomotricidade">
+                        <div id="psicomotricidade" class="atuacaoEspecifica">
                             <li>Psicomotricidade</li>
                             <p>O especialista atua junto às crianças em fase de desenvolvimento:</p>
                                 <ul>
                                     <li>bebês de alto risco, crianças com dificuldades/atrasos no desenvolvimento global;</li>
                                     <li>crianças portadoras de necessidades especiais (deficiências sensoriais, perceptivas, motoras, mentais e relacionais) em consequência de lesões.</li>
                                 </ul>
-                            <p>Por meio da participação em equipes multidisciplinares, criadas por entidades públicas ou privadas, ele planeja, coordena, supervisiona, implementa, executa e avalia programas, cursos nos diversos níveis, pesquisas ou eventos de qualquer natureza, direta ou indiretamente relacionadas com atividades psicomotoras, que envolvam os aspectos psíquicos, afetivos, relacionais, cognitivos, mentais, junto a atividade corporal.</p>
                             <p>Elabora informes técnico-científicos, gerencia projetos de desenvolvimento de produtos e serviços, estudos e pesquisas mercadológicas.</p>
                             <p>Atua no campo profilático (educativo e preventivo) nas creches, escolas, escolas especiais e vem possibilitar ao sujeito um desenvolvimento integrado às interfaces dos aspectos afetivo, cognitivo e social, pela via da ação e da atividade lúdica, que constituem os alicerces do acesso ao pensamento</p>
                         </div>
 
-                        <div id="psicopedagoia">
+                        <div id="psicopedagoia" class="atuacaoEspecifica">
                             <li>Psicopedagogia</li>
-                            <p>Esse trabalho pode ser desenvolvido em diferentes níveis, propiciando aos educadores conhecimentos para:</p>
-                                <ul>
-                                    <li>Reconstrução de seus próprios modelos de aprendizagem, de modo que, ao se perceberem também como “aprendizes”, revejam seus modelos de ensinantes;</li>
-                                    <li>Identificação das diferentes etapas do desenvolvimento evolutivo dos alunos e compreensão de sua relação com a aprendizagem;</li>
-                                    <li>Diagnóstico do que é possível ser melhorado no próprio ambiente escolar e do que precisa ser encaminhado para profissionais fora da escola;</li>
-                                    <li>Percepção de como se processou a evolução dos conhecimentos na história da humanidade, para compreender melhor o processo de construção de conhecimentos dos alunos;</li>
-                                    <li>Intervenções para a melhoria da qualidade do ambiente escolar;</li>
-                                    <li>Compreensão da competência técnica e do compromisso político presentes em todas as dimensões do sujeito.</li>
-                                </ul>
-                            <p>O psicólogo especialista em psicopedagogia, nesse processo, promove:</p>
-                                <ul>
-                                    <li>O levantamento, a compreensão e análise das práticas escolares e suas relações com a aprendizagem;</li>
-                                    <li>O apoio psicopedagógico a todos os trabalhos realizados no espaço da escola;</li>
-                                    <li>A ressignificação da unidade ensino/aprendizagem, a partir das relações que o sujeito estabelece entre o objeto de conhecimento e suas possibilidades de conhecer, observar e refletir, a partir das informações que já possui;</li>
-                                    <li>A prevenção de fracassos na aprendizagem e a melhoria da qualidade do desempenho escolar.</li>
-                                </ul>
+                                <p>Esse trabalho pode ser desenvolvido em diferentes níveis, propiciando aos educadores conhecimentos para:</p>
+                                    <ul>
+                                        <li>Reconstrução de seus próprios modelos de aprendizagem, de modo que, ao se perceberem também como “aprendizes”, revejam seus modelos de ensinantes;</li>
+                                        <li>Identificação das diferentes etapas do desenvolvimento evolutivo dos alunos e compreensão de sua relação com a aprendizagem;</li>
+                                        <li>Diagnóstico do que é possível ser melhorado no próprio ambiente escolar e do que precisa ser encaminhado para profissionais fora da escola;</li>
+                                        <li>Percepção de como se processou a evolução dos conhecimentos na história da humanidade, para compreender melhor o processo de construção de conhecimentos dos alunos;</li>
+                                        <li>Intervenções para a melhoria da qualidade do ambiente escolar;</li>
+                                        <li>Compreensão da competência técnica e do compromisso político presentes em todas as dimensões do sujeito.</li>
+                                    </ul>
+                                <p>O psicólogo especialista em psicopedagogia, nesse processo, promove:</p>
+                                    <ul>
+                                        <li>O levantamento, a compreensão e análise das práticas escolares e suas relações com a aprendizagem;</li>
+                                        <li>O apoio psicopedagógico a todos os trabalhos realizados no espaço da escola;</li>
+                                        <li>A ressignificação da unidade ensino/aprendizagem, a partir das relações que o sujeito estabelece entre o objeto de conhecimento e suas possibilidades de conhecer, observar e refletir, a partir das informações que já possui;</li>
+                                        <li>A prevenção de fracassos na aprendizagem e a melhoria da qualidade do desempenho escolar.</li>
+                                    </ul>
                         </div>
+                    </div>
                     </ul>
                 </div>
                 
                 <div id="abrirTiposDeTranstornos" class="aberturaDeConteudo"></div>
                 <div id="abrirTiposDeTerapia" class="aberturaDeConteudo">
-                    <h2>Tipos de terapias</h2>
+                    <div class="home">
+                        <a href="#fechar" class="fechar">X</a>
+                        <h2>Tipos de terapias</h2>
 
-                    <p>A saúde não é um conceito que se refere apenas ao nível físico, mas também ao nível emocional.</p>
+                        <p>A saúde não é um conceito que se refere apenas ao nível físico, mas também ao nível emocional.</p>
 
-                    <p>A psicologia visa melhorar o bem estar de um ser humano, reduzindo os hábitos comportamentais negativos. Sendo assim, ela fornece dados valiosos para promover hábitos saúdaveis em nossa sociedade, a fim de educar para qeu seja possível compreender que a nossa saúde mental é algo fundamental para a felicidade.</p>
+                        <p>A psicologia visa melhorar o bem estar de um ser humano, reduzindo os hábitos comportamentais negativos. Sendo assim, ela fornece dados valiosos para promover hábitos saúdaveis em nossa sociedade, a fim de educar para qeu seja possível compreender que a nossa saúde mental é algo fundamental para a felicidade.</p>
 
-                    <p>Por isso é tão importante que todo ser humano tenha acesso a um psicólogo ou realizar terapias. Não podemos esquecer que para determinar a terapia mais adequada para você é necessário buscar a ajuda de um profissional. Abaixo os principais tipos de terapias existentes:</p>
+                        <p>Por isso é tão importante que todo ser humano tenha acesso a um psicólogo ou realizar terapias. Não podemos esquecer que para determinar a terapia mais adequada para você é necessário buscar a ajuda de um profissional. Abaixo os principais tipos de terapias existentes:</p>
 
-                    <ul>
-                        <li>Psicanálise</li>
-                            <p>Fica entre as mais antigas e comuns dos tipos de psicoterapia e foi criada originalmente por Sigmund Freud. É uma terapia baseada na conversa que tem como meta trazer pensamentos e sentimentos do inconsciente para o consciente. É um dos tipos de terapia mais comuns.</p>
+                        <ul>
+                            <li>Psicanálise</li>
+                                <p>Fica entre as mais antigas e comuns dos tipos de psicoterapia e foi criada originalmente por Sigmund Freud. É uma terapia baseada na conversa que tem como meta trazer pensamentos e sentimentos do inconsciente para o consciente. É um dos tipos de terapia mais comuns.</p>
 
-                        <li>Cognitivo-Comportamental</li>
-                            <A>Essa terapia é o tipo mais comum, apesar de ser baseada em fala, ela é bastante diferente da psicanálise por alguns motivos. A <i>TCC</i> (como também é chamada), costuma focar em problemas específicos e tem uma abordagem mais objetiva.</p>
+                            <li>Cognitivo-Comportamental</li>
+                                <A>Essa terapia é o tipo mais comum, apesar de ser baseada em fala, ela é bastante diferente da psicanálise por alguns motivos. A <i>TCC</i> (como também é chamada), costuma focar em problemas específicos e tem uma abordagem mais objetiva.</p>
 
-                        <li>Junguiana</li>
-                            <p>Assim como a linha psicanalítica de Freud, a terapia Junguiana é baseada na fala. O paciente pode falar sobre o que quiser e da maneira que quiser – o papel do terapeuta é mais ativo, e ele tenta compreender simbolicamente o que o paciente quer dizer.</p>
+                            <li>Junguiana</li>
+                                <p>Assim como a linha psicanalítica de Freud, a terapia Junguiana é baseada na fala. O paciente pode falar sobre o que quiser e da maneira que quiser – o papel do terapeuta é mais ativo, e ele tenta compreender simbolicamente o que o paciente quer dizer.</p>
 
-                        <li>Psicodrama</li>
-                            <p>É uma técnica de terapia, geralmente em grupo, cuja principal característica é a dramatização. O método foi criado pelo  médico romeno Jacob Levy Moreno no século XX, o desenvolvimento do psicodrama foi um grande rompimento com outras técnicas de terapia, e foge completamente dos tipos de terapia tradicionais de configurado por um médico e um paciente sentados conversando médico e um paciente sentados conversando.</p>
+                            <li>Psicodrama</li>
+                                <p>É uma técnica de terapia, geralmente em grupo, cuja principal característica é a dramatização. O método foi criado pelo  médico romeno Jacob Levy Moreno no século XX, o desenvolvimento do psicodrama foi um grande rompimento com outras técnicas de terapia, e foge completamente dos tipos de terapia tradicionais de configurado por um médico e um paciente sentados conversando médico e um paciente sentados conversando.</p>
 
-                        <li>EMDR</li>
-                            <p>A terapia EMDR (sigla  em inglês para <i>Eye Movement Desensitization and Reprocessing</i>- Desinsetização e Reprocessamento a partir de Movimentos Oculares) é uma modalidade relativamente nova de terapia, criada pela Drª Francine Shapiro entre os anos 1980 e 1990.</p>
-                            <p>A técnica, como o nome sugere, surgiu como uma terapia que, a partir de movimentos oculares, juntamente com o atendimento terapêutico, se propunha a reprocessar memórias antigas e traumáticas. Hoje em dia, não somente estímulos visuais são usados, mas também estímulos bilaterais táteis e auditivos.</p>
-                    </ul>
+                            <li>EMDR</li>
+                                <p>A terapia EMDR (sigla  em inglês para <i>Eye Movement Desensitization and Reprocessing</i>- Desinsetização e Reprocessamento a partir de Movimentos Oculares) é uma modalidade relativamente nova de terapia, criada pela Drª Francine Shapiro entre os anos 1980 e 1990.</p>
+                                <p>A técnica, como o nome sugere, surgiu como uma terapia que, a partir de movimentos oculares, juntamente com o atendimento terapêutico, se propunha a reprocessar memórias antigas e traumáticas. Hoje em dia, não somente estímulos visuais são usados, mas também estímulos bilaterais táteis e auditivos.</p>
+                        </ul>
+                    </div>
 
                 </div>
                 <div id="abrirExerciciosVsSaude" class="aberturaDeConteudo">
-                    <h3>Exercícios físicos e mentais que contribuem para a melhora da nossa saúde mental</h3>
-                    <p>A atividade física constante e regular, além de ajudar na estética do nosso corpo, atua significativamente no nosso campo psicológico. Com o avanço tecnológico, as pressões no trabalho e a preocupação econômica levam o homem a cada vez mais apresentarem problemas psicológicos e/ou emocionais.</p>
+                    <div class="home">
+                        <a href="#fechar" class="fechar">X</a>
+                        <h3>Exercícios físicos e mentais que contribuem para a melhora da nossa saúde mental</h3>
+                        <p>A atividade física constante e regular, além de ajudar na estética do nosso corpo, atua significativamente no nosso campo psicológico. Com o avanço tecnológico, as pressões no trabalho e a preocupação econômica levam o homem a cada vez mais apresentarem problemas psicológicos e/ou emocionais.</p>
 
-                    <p>Entretanto, mesmo conscientes da relação entre o esporte e a psicologia, nem todo mundo compreende o quanto a prática de exercícios físicos pode influenciar o bem-estar emocional e até ser uma parte importante do tratamento de problemas psicológicos, destacam os psicólogos.</p>
+                        <p>Entretanto, mesmo conscientes da relação entre o esporte e a psicologia, nem todo mundo compreende o quanto a prática de exercícios físicos pode influenciar o bem-estar emocional e até ser uma parte importante do tratamento de problemas psicológicos, destacam os psicólogos.</p>
 
-                    <p>Fala-se muito sobre os benefícios físicos da prática de atividades físicas, mas pouco sobre o quanto elas afetam nossa saúde emocional.De acordo com os pesquisadores, pessoas sedentárias possuem uma chance maior de desenvolver depressão do que aqueles que praticam atividades físicas regularmente, e a combinação de terapia com exercícios físicos pode ser uma forma de acelerar o tratamento da depressão já existente. A endorfina, um tipo de hormônio natural produzido pelo nosso corpo, é liberada durante e após a prática de atividade física e proporciona sensação de bem-estar, alegria e conforto.</p>
+                        <p>Fala-se muito sobre os benefícios físicos da prática de atividades físicas, mas pouco sobre o quanto elas afetam nossa saúde emocional.De acordo com os pesquisadores, pessoas sedentárias possuem uma chance maior de desenvolver depressão do que aqueles que praticam atividades físicas regularmente, e a combinação de terapia com exercícios físicos pode ser uma forma de acelerar o tratamento da depressão já existente. A endorfina, um tipo de hormônio natural produzido pelo nosso corpo, é liberada durante e após a prática de atividade física e proporciona sensação de bem-estar, alegria e conforto.</p>
 
-                    <p>Livra a mente de preocupações para que a pessoa consiga sair do círculo vicioso de pensamentos negativos que acabam alimentando ainda mais a depressão. Alguns estudos ressaltam também a relação entre prática de exercícios físicos para melhora do humor e alívio da depressão.</p>
+                        <p>Livra a mente de preocupações para que a pessoa consiga sair do círculo vicioso de pensamentos negativos que acabam alimentando ainda mais a depressão. Alguns estudos ressaltam também a relação entre prática de exercícios físicos para melhora do humor e alívio da depressão.</p>
 
-                    <p><b> Assim, praticar atividade física para combater a depressão é uma estratégia saudável.</b></p>
+                        <p><b> Assim, praticar atividade física para combater a depressão é uma estratégia saudável.</b></p>
 
-                    <p>Recentemente, muitas descobertas têm sido feitas em torno dos efeitos das atividades físicas na nossa saúde mental. A consequência direta dos efeitos da endorfina no nosso organismo é a diminuição do estresse, do mau humor, da ansiedade e o alívio de tensões. Estudos confirmam que qualquer atividade física pode ajudar muito a alterar os padrões de humor e ânimo.</p>
+                        <p>Recentemente, muitas descobertas têm sido feitas em torno dos efeitos das atividades físicas na nossa saúde mental. A consequência direta dos efeitos da endorfina no nosso organismo é a diminuição do estresse, do mau humor, da ansiedade e o alívio de tensões. Estudos confirmam que qualquer atividade física pode ajudar muito a alterar os padrões de humor e ânimo.</p>
 
-                        <div id="beneficios">
-                            <h4>Benefícios da atividade física para saúde mental</h4>
-                                <ul>
-                                    <li><b>Redução do estresse</b></li>
-                                        <p>Práticas como yoga e pilates, em especial, são ótimas para nos ajudar a controlar o fluxo de pensamentos, limpar a mente de problemas os quais não conseguimos resolver e focar no presente.</p>
-                                        <p>O cortisol baixo também é um problema, pois resulta em fadiga, fraqueza, desejo repentino de comer doces (o que contribui para uma alimentação nada saudável) e depressão.</p>
+                            <div id="beneficios" class="exercicios">
+                                <h4>Benefícios da atividade física para saúde mental</h4>
+                                    <ul>
+                                        <li><b>Redução do estresse</b></li>
+                                            <p>Práticas como yoga e pilates, em especial, são ótimas para nos ajudar a controlar o fluxo de pensamentos, limpar a mente de problemas os quais não conseguimos resolver e focar no presente.</p>
+                                            <p>O cortisol baixo também é um problema, pois resulta em fadiga, fraqueza, desejo repentino de comer doces (o que contribui para uma alimentação nada saudável) e depressão.</p>
 
-                                    <li><b>Melhora na qualidade do sono</b></li>
-                                        <p> Pouco sono gera fadiga, alterações hormonais, aumento de peso, estresse, sonolência, confusão mental, dor muscular, e mais efeitos colaterais negativos. A atividade física melhora a qualidade do sono, diminuindo a insônia e nos ajudando a estabelecer uma rotina de sono.</p>
-                                    
-                                    <li>Equilíbrio na produção de hormônios</li>
-                                        <p>Alguns de seus benéficos são a diminuição do estresse, redução de dores de cabeça e enxaquecas, promoção da saciedade, alívio dos sintomas da TPM, melhora do bem-estar e favorecimento do relaxamento. Já a dopamina trabalha na regulação do humor e do estresse, controle das funções motoras, exercício da memória, melhora da concentração e do apetite.</p>
-                                        <p>Uma vida menos estressante significa melhor qualidade de vida e menos desânimo, tristeza e pensamentos ruins.</p>
-
-                                    <li>Aumento da disposição no dia a dia</li>
-                                        <p>Com a prática constante de atividades físicas, mantemos a nossa disposição sempre constante e, assim, a fadiga desaparece. Ela também contribui para a elevação da autoestima, que, consequentemente, aumenta a nossa motivação para concluir tarefas e perseguir metas. A sua produção dispara mensagens de relaxamento e bem-estar para o corpo. Ou seja, a disposição surge com o aumento do hormônio.</p>
-
-                                    <li>Prevenção de doenças</li>
-                                        <p>Movimentar o corpo garante a circulação do sangue, regula os batimentos cardíacos, fortalece os músculos, melhora a postura corporal, combate a obesidade e o sobrepeso. Algumas horas de atividade física por semana são capazes de reduzir níveis elevados de açúcar e colesterol no sangue. Todos esses fatores afetam também a nossa saúde mental, pois,o corpo e a mente estão intrinsecamente ligados e precisam permanecer em equilíbrio.</p>
-                                        <p>Também diminui a probabilidade de incidência de doenças cardiovasculares, dores musculares, osteoporose, diabetes, câncer e transtornos mentais.</p>
+                                        <li><b>Melhora na qualidade do sono</b></li>
+                                            <p> Pouco sono gera fadiga, alterações hormonais, aumento de peso, estresse, sonolência, confusão mental, dor muscular, e mais efeitos colaterais negativos. A atividade física melhora a qualidade do sono, diminuindo a insônia e nos ajudando a estabelecer uma rotina de sono.</p>
                                         
-                                    <li>Alívio dos sintomas de transtornos mentais</li>
-                                        <p>Com a produção dos hormônios da felicidade em ordem, os sintomas de transtornos mentais como a depressão, ansiedade, síndrome do pânico, transtorno do déficit de atenção com hiperatividade (TDAH), entre outros, tornam-se mais leves.</p>
-                                        <p>É claro que, a pessoa com transtorno mental deve continuar consultando o psicólogo e o psiquiatra para dar continuidade ao tratamento. Sob essas condições, os sintomas dos transtornos mentais, são de fácil administração.</p>
+                                        <li>Equilíbrio na produção de hormônios</li>
+                                            <p>Alguns de seus benéficos são a diminuição do estresse, redução de dores de cabeça e enxaquecas, promoção da saciedade, alívio dos sintomas da TPM, melhora do bem-estar e favorecimento do relaxamento. Já a dopamina trabalha na regulação do humor e do estresse, controle das funções motoras, exercício da memória, melhora da concentração e do apetite.</p>
+                                            <p>Uma vida menos estressante significa melhor qualidade de vida e menos desânimo, tristeza e pensamentos ruins.</p>
+
+                                        <li>Aumento da disposição no dia a dia</li>
+                                            <p>Com a prática constante de atividades físicas, mantemos a nossa disposição sempre constante e, assim, a fadiga desaparece. Ela também contribui para a elevação da autoestima, que, consequentemente, aumenta a nossa motivação para concluir tarefas e perseguir metas. A sua produção dispara mensagens de relaxamento e bem-estar para o corpo. Ou seja, a disposição surge com o aumento do hormônio.</p>
+
+                                        <li>Prevenção de doenças</li>
+                                            <p>Movimentar o corpo garante a circulação do sangue, regula os batimentos cardíacos, fortalece os músculos, melhora a postura corporal, combate a obesidade e o sobrepeso. Algumas horas de atividade física por semana são capazes de reduzir níveis elevados de açúcar e colesterol no sangue. Todos esses fatores afetam também a nossa saúde mental, pois,o corpo e a mente estão intrinsecamente ligados e precisam permanecer em equilíbrio.</p>
+                                            <p>Também diminui a probabilidade de incidência de doenças cardiovasculares, dores musculares, osteoporose, diabetes, câncer e transtornos mentais.</p>
+                                            
+                                        <li>Alívio dos sintomas de transtornos mentais</li>
+                                            <p>Com a produção dos hormônios da felicidade em ordem, os sintomas de transtornos mentais como a depressão, ansiedade, síndrome do pânico, transtorno do déficit de atenção com hiperatividade (TDAH), entre outros, tornam-se mais leves.</p>
+                                            <p>É claro que, a pessoa com transtorno mental deve continuar consultando o psicólogo e o psiquiatra para dar continuidade ao tratamento. Sob essas condições, os sintomas dos transtornos mentais, são de fácil administração.</p>
+                                    </ul>
+                            </div>
+                            <div id="inicioAPratica" class="exercicios">
+                                <h4>Iniciando a prática aos exercícios físicos</h4>
+                                <p>Uma série de pesquisas apontam para diferentes períodos em que novos hábitos são formados. A chave é que devemos praticar coisas novas por muito tempo antes que elas se tornem parte de nós.</p>
+                                <ol>
+                                    <li>Devemos escolher uma atividade simples para que ela possa ser realizada em casa, na rua ou até mesmo na academia.</li>
+                                    <li>Devemos exercer perseverança. Os primeiros meses são os mais difíceis, de modo que o corpo nunca desenvolveu o hábito de se mover.</li>
+                                    <li>Precisamos continuar os exercícios físicos após a adaptação, pois seremos capazes de notar a diferença na personalidade, na resistência e no desejo por exercícios físicos.</li>
+                                </ol>
+                            </div>
+                            <div id="tiposDeExercicios" class="exercicios">
+                                <h4>5 tipos de exercícios que podem contribuir para a melhora da nossa saúde mental</h4>
+                                <ul>
+                                    <li>Caminhada e/ou corrida</li>
+                                        <p>Caminhar e correr são um bom exemplo de como combinar saúde física e mental em um momento. Além de liberar endorfinas no cérebro, os exercícios também podem ajudar a aliviar a tensão no corpo e relaxar os músculos. Corpo menos tenso, coração menos tenso.</p>
+
+                                    <li>Ciclismo</li>
+                                        <p>O ciclismo pode atingir tudo isso e colocar menos pressão sobre o corpo do que outros esportes. Recomenda-se que pessoas com problemas nas articulações usem essa abordagem, pois essa atividade não tem impacto direto sobre eles. A prática ao ar livre também é uma ótima oportunidade para reduzir o estresse.</p>
+                                        <p>Por se tratar de uma atividade que geralmente é realizada separadamente, ela permite que falemos com nós mesmos. Pausar a reflexão é essencial para melhorar a saúde mental</p>
+
+                                    <li>Esportes em equipe</li>
+                                        <p>Futebol, basquete ou vôlei ou nenhum desses três, escolha o esporte que mais lhe agrada e comece a praticar. O que é importante a este respeito é que o único requisito é que o esporte definido seja realizado em equipe, o que procuramos neste tópico são seus fatores sociais. A estimulação gerada por outras pessoas no local é vital para a saúde mental, além de aumentar a empatia e a unidade com os outros, o trabalho em equipe também pode desenvolver diferentes habilidades de comunicação.</p>
+
+                                    <li>Musculação</li>
+                                        <p>Atenção e atenção às sensações físicas são o que diferencia este movimento. Nesse sentido, o estado mental da pessoa é melhorado devido ao nível necessário de atenção e relaxamento muscular durante as atividades físicas subsequentes. O treinamento com pesos também pode ajudar pessoas com transtornos de ansiedade. O exercício de intensidade moderada combina saúde física e mental. Essa atividade ajuda o sistema nervoso a responder a estímulos fixos (uma característica do distúrbio).</p>
+
+                                    <li>Yoga</li>
+                                        <p>A prática do Yoga é uma boa opção para quem deseja aliar a atividade física ao relaxamento. Pode reduzir o estresse e a ansiedade e é recomendado para pessoas com sintomas de estresse pós-traumático. Essencial para estimular o cérebro e fazer exercícios intensivos.</p>
+                                        <p>Portanto, além de proporcionar melhorias físicas óbvias, a yoga também desencadeia momentos de autorreflexão e abstração. Momentos importantes que às vezes passam despercebidos no dia a dia agitado, mas que são essenciais para a saúde mental.</p>
                                 </ul>
-                        </div>
-                        <div id="inicioAPratica">
-                            <h4>Iniciando a prática aos exercícios físicos</h4>
-                            <p>Uma série de pesquisas apontam para diferentes períodos em que novos hábitos são formados. A chave é que devemos praticar coisas novas por muito tempo antes que elas se tornem parte de nós.</p>
-                            <ol>
-                                <li>Devemos escolher uma atividade simples para que ela possa ser realizada em casa, na rua ou até mesmo na academia.</li>
-                                <li>Devemos exercer perseverança. Os primeiros meses são os mais difíceis, de modo que o corpo nunca desenvolveu o hábito de se mover.</li>
-                                <li>Precisamos continuar os exercícios físicos após a adaptação, pois seremos capazes de notar a diferença na personalidade, na resistência e no desejo por exercícios físicos.</li>
-                            </ol>
-                        </div>
-                        <div id="tiposDeExercicios">
-                            <h4>5 tipos de exercícios que podem contribuir para a melhora da nossa saúde mental</h4>
-                            <ul>
-                                <li>Caminhada e/ou corrida</li>
-                                    <p>Caminhar e correr são um bom exemplo de como combinar saúde física e mental em um momento. Além de liberar endorfinas no cérebro, os exercícios também podem ajudar a aliviar a tensão no corpo e relaxar os músculos. Corpo menos tenso, coração menos tenso.</p>
-
-                                <li>Ciclismo</li>
-                                    <p>O ciclismo pode atingir tudo isso e colocar menos pressão sobre o corpo do que outros esportes. Recomenda-se que pessoas com problemas nas articulações usem essa abordagem, pois essa atividade não tem impacto direto sobre eles. A prática ao ar livre também é uma ótima oportunidade para reduzir o estresse.</p>
-                                    <p>Por se tratar de uma atividade que geralmente é realizada separadamente, ela permite que falemos com nós mesmos. Pausar a reflexão é essencial para melhorar a saúde mental</p>
-
-                                <li>Esportes em equipe</li>
-                                    <p>Futebol, basquete ou vôlei ou nenhum desses três, escolha o esporte que mais lhe agrada e comece a praticar. O que é importante a este respeito é que o único requisito é que o esporte definido seja realizado em equipe, o que procuramos neste tópico são seus fatores sociais. A estimulação gerada por outras pessoas no local é vital para a saúde mental, além de aumentar a empatia e a unidade com os outros, o trabalho em equipe também pode desenvolver diferentes habilidades de comunicação.</p>
-
-                                <li>Musculação</li>
-                                    <p>Atenção e atenção às sensações físicas são o que diferencia este movimento. Nesse sentido, o estado mental da pessoa é melhorado devido ao nível necessário de atenção e relaxamento muscular durante as atividades físicas subsequentes. O treinamento com pesos também pode ajudar pessoas com transtornos de ansiedade. O exercício de intensidade moderada combina saúde física e mental. Essa atividade ajuda o sistema nervoso a responder a estímulos fixos (uma característica do distúrbio).</p>
-
-                                <li>Yoga</li>
-                                    <p>A prática do Yoga é uma boa opção para quem deseja aliar a atividade física ao relaxamento. Pode reduzir o estresse e a ansiedade e é recomendado para pessoas com sintomas de estresse pós-traumático. Essencial para estimular o cérebro e fazer exercícios intensivos.</p>
-                                    <p>Portanto, além de proporcionar melhorias físicas óbvias, a yoga também desencadeia momentos de autorreflexão e abstração. Momentos importantes que às vezes passam despercebidos no dia a dia agitado, mas que são essenciais para a saúde mental.</p>
-                            </ul>
-                        </div>
+                            </div>
+                    </div>
                 </div>
             </section>
             <!--Fim conteúdo da aplicação-->
             
+            <!--Inicio rodapé-->
             <footer class="rodape">
                 <div class="logoRodape">
                     <figure class="rodapeLogo">
@@ -392,6 +378,9 @@
                     </div>
                 </section>
             </footer>
+            <!--Fim rodape-->
         </main>
+        <!--Fim conteúdo principal-->
+        <script src="./JS/curiosidades.js"></script>
     </body>
 </html>
