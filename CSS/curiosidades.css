@@ -40,7 +40,7 @@ a{
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        padding: 5px;
+        padding: .3rem;
     }
 
         /*Estilo do logo*/
@@ -62,9 +62,11 @@ a{
         /*Estilo do menu de navegação*/
         .menu{
             display: flex;
+            
         }
             .menu li{
-                margin-left: 1rem;
+                margin-left: 3rem;
+                background-color: tomato;
             } 
             .menu li:nth-child(2){
                 display: flex;
@@ -91,11 +93,11 @@ a{
                     /*Menu suspenso*/
                     .menu .boxCuriosidades{
                         position: absolute;
-                        top: 90px;
-                        right: 100px;
+                        top: 5.6rem;
+                        right: 6.3rem;
                         background-color: #6ca89e;
                         width: 25%;
-                        padding: 10px;
+                        padding: 0.6rem;
                         visibility: hidden;
                         /* opacity: 0; */
                         transition: .3s;
@@ -104,10 +106,10 @@ a{
                     .menu .boxCuriosidades::before{
                         content: " ";
                         position: absolute;
-                        top: -20px;
+                        top: -1.3rem;
                         right: 29%;
-                        width: 25px;
-                        height: 20px;
+                        width: 1.6rem;
+                        height: 1.3rem;
                         background-color: #6ca89e;
                         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
                     }
@@ -220,7 +222,7 @@ a{
             .navTexto .btnSaibaMais{
                 border: none;
                 border-radius: 4px;
-                padding: 8px 15px;
+                padding: 0.5rem 0.9rem;
                 background-color: #6ca89e;
                 font-size: 1rem;
                 transition: linear 400ms;
@@ -236,14 +238,66 @@ a{
     .conteudo {}
 
         /*Estilo da abertura do conteúdo*/
-        .aberturaDeConteudo {}
-            .home {}
+        .aberturaDeConteudo {
+            
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0%;
+            background-color: #6ca89e;
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition:  400ms ease-in;
+            -moz-transition:  400ms ease-in;
+            transition:  400ms ease-in;
+            pointer-events: auto;
+            display: none;
+        }
+            .aberturaDeConteudo:target{
+                display: block;
+                opacity: 1;
+                pointer-events: auto;
+            }
+                .home {
+                    width: 60rem;
+                    position: relative;
+                    margin: 5% auto;
+                    padding: 1.6rem 2.5rem 2.1rem 2.5rem;
+                    -webkit-border-radius: .7rem;
+                    -moz-border-radius: .7rem;
+                    background-color: #DFE4EB;
+                    text-align: justify;
+                }
                 .home a {}
-                .home h2 {}
-                .home p {}
+                .home h2 {
+                    margin-top: 5%;
+                    text-align: center;
+                }
+                .home p {
+                    margin-top: 2.5%;
+                    margin-bottom: 2.5%;
+                    padding: 0.01%;
+                }
                     .home ul li{}  
-                        .fechar{}
-                        .fechar:hover{}
+                        .fechar{
+                            background-color: #606061;
+                            color: #fff;
+                            line-height: 25px;
+                            position: absolute;
+                            right: -12px;
+                            text-align: center;
+                            top: -10px;
+                            width: 24px;
+                            text-decoration: none;
+                            font-weight: bold;
+                            -webkit-border-radius: 12px;
+                            -moz-border-radius: 12px;
+                            border-radius: 12px;
+                        }
+                        .fechar:hover{
+                            background-color: #133530;
+                        }
 
                         /*Estilo da area de atuação especificia*/ 
                         .atuacaoEspecifica{}
