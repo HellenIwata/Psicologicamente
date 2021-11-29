@@ -12,10 +12,10 @@
 .containerPrincip{
     font-family: 'PT Sans', sans-serif;
     font-size: 1rem;
-    background-color: #DFE4EB;
 }
 body{
-    overflow-x:hidden ;
+    overflow-x:hidden;
+    background-color: #DFE4EB;
 }
 
 h1, h2, h3, h4, h5{
@@ -30,6 +30,16 @@ img{
 }
 a{
     color: #000;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    background-color: #133530;
+    width: .7rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 1rem;
 }
 
     /*Estilizando o cabeçalho */
@@ -45,8 +55,8 @@ a{
 
         /*Estilo do logo*/
         .logoCabecalho{
-            height: 5.3rem;
-            width: 5.3rem;
+            height: 4.8rem;
+            width: 4.8rem;
             position: relative;
             overflow: hidden;
         }
@@ -55,22 +65,18 @@ a{
                     width: 100%;
                     object-fit: cover;
                     position: absolute;
-                    top: 0;
-                    left: 0;
                 }
 
         /*Estilo do menu de navegação*/
         .menu{
             display: flex;
-            
+            margin-left: 46rem;
         }
             .menu li{
                 margin-left: 3rem;
-                background-color: tomato;
             } 
             .menu li:nth-child(2){
                 display: flex;
-                align-items: center;
             }
             .menu li:nth-child(2) i{
              font-size: .9rem;   
@@ -78,13 +84,11 @@ a{
 
             .menu li:nth-child(2):hover .boxCuriosidades {
                 visibility: visible;
-                
-                /* opacity: 1; */
             }
             
                 .menu li a{
                     display: block;
-                    padding: 5px;
+                    padding: 2px;
                 }
                     .menu li a:hover{
                         color :#6ca89e;
@@ -93,15 +97,15 @@ a{
                     /*Menu suspenso*/
                     .menu .boxCuriosidades{
                         position: absolute;
-                        top: 5.6rem;
-                        right: 6.3rem;
+                        top: 5rem;
+                        right: 9.6rem;
                         background-color: #6ca89e;
-                        width: 25%;
+                        width: 23%;
                         padding: 0.6rem;
                         visibility: hidden;
-                        /* opacity: 0; */
                         transition: .3s;
                         z-index: 1;
+                        border-radius: 5%;
                     }
                     .menu .boxCuriosidades::before{
                         content: " ";
@@ -201,9 +205,14 @@ a{
     /*Estilo doa abertura do popUp da página*/
     .navConteudPrincip{
         width:100%;
-        height: auto;
+        display: flex;
+        height: 50rem;
         position: relative;
         float: left;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 15rem;
+        padding: .5rem;
     }
         /*Estilo do popUp*/
         .navTexto{
@@ -212,20 +221,36 @@ a{
             position: relative;
             float: left;
             text-align: justify;
+            margin-top: .5%;
+            
         }
             .navTexto a:hover{
                 color: #6ca89e;
             }
-            .navTexto img{}
-            .navTexto h1{}
-            .navTexto p{}
+            .navTexto img{
+                width: 630px;
+                height: 226px;
+            }
+            .navTexto h1{
+                margin-top: 1%;
+                font-size: 1.2rem;
+                text-align: center;
+                padding: .5rem;
+            }
+            .navTexto p{
+                margin-top: auto;
+                font-size: 1rem;
+                padding: .24rem;
+            }
+            
             .navTexto .btnSaibaMais{
                 border: none;
-                border-radius: 4px;
+                border-radius: .2rem;
                 padding: 0.5rem 0.9rem;
                 background-color: #6ca89e;
                 font-size: 1rem;
                 transition: linear 400ms;
+                
             }
             .navTexto .btnSaibaMais:hover{
                 background-color: #a4e2d7;
@@ -235,11 +260,12 @@ a{
                 }
 
     /*Estilo do conteúdo da página*/
-    .conteudo {}
+    .conteudo {
+        
+    }
 
         /*Estilo da abertura do conteúdo*/
         .aberturaDeConteudo {
-            
             position: fixed;
             top: 0;
             bottom: 0;
@@ -253,7 +279,18 @@ a{
             transition:  400ms ease-in;
             pointer-events: auto;
             display: none;
+            overflow: auto;
         }
+            .aberturaDeConteudo::-webkit-scrollbar{
+                background-color: #133530;
+                width: .7rem;
+                border-top-right-radius: .7rem;
+                border-bottom-right-radius: .7rem;
+            }
+            .aberturaDeConteudo::-webkit-scrollbar-thumb{
+                background-color: #a4e2d7;
+                border-radius: 1rem;
+            }
             .aberturaDeConteudo:target{
                 display: block;
                 opacity: 1;
@@ -269,7 +306,6 @@ a{
                     background-color: #DFE4EB;
                     text-align: justify;
                 }
-                .home a {}
                 .home h2 {
                     margin-top: 5%;
                     text-align: center;
@@ -277,7 +313,7 @@ a{
                 .home p {
                     margin-top: 2.5%;
                     margin-bottom: 2.5%;
-                    padding: 0.01%;
+                    padding: .01%;
                 }
                     .home ul li{}  
                         .fechar{
@@ -306,7 +342,9 @@ a{
                                 .atuacaoEspecifica ol li{}
 
                         /*Estilo dos exercícios físicos*/
-                        .exercicios{}
+                        .exercicios{
+                            
+                        }
                             .exercicios h4{}
                             .exercicios ul li{}
                             .exercicios p{}
@@ -314,38 +352,85 @@ a{
 
     /*Estilizando o rodapé*/
     .rodape{
-        height: 151px;
-        width: 1799px;
-        left: 0px;
-        top: 0px;
-        border-radius: 0px;
+        width: 100%;
+        height: 8rem;
         background-color: #C5F9F0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: .3rem;
     }
 
+        .rodapeBox{
+            width: 18rem;
+            min-height: 9rem;
+            padding: .3rem;
+            text-align: center;
+        }
+        .rodapeBox:nth-child(4){
+            width: 25rem;
+        }
+            .rodapeBox h5{
+                font-size: 1rem;
+            }
+
+            .rodapeBox li{
+                display: block;
+                list-style: none;
+                font-size: .8rem;
+                padding: .2rem;
+            }
+            .rodapeBox a:hover{
+                color: #6ca89e;
+            }
         /*Estilo do logo do rodapé*/
-        .logoRodape{}
-            .logoRodape img{}
+        .logoRodape{
+            height: 6rem;
+            width: 6rem;
+            justify-content: flex-start;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+            .logoRodape img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                position: absolute;
+            }
         
         /*Estilo dos links para as redes sociais do rodapé*/
-        .redesSociais{}
-            .redesSociais h5{}
-            .redesSociais a{}
-                .redesSociais a:hover{}
-                .redesSociais img{}
+        .redesSociais{
+            display: flex;
+            margin-top: .5%;
+            padding: .3rem;
+        }
+            .redesSociais h5{
+                text-align: justify;
+                padding: .3rem;
+            }
+                .redesSociais img{
+                    float: left;
+                    justify-content: space-evenly;
+                    padding: .35rem;
+                    transition: linear 400ms;
+                    /* justify-content: ; */
+                }
         
         /*Estilo do mapa do site*/
         .mapaSite{}
             .mapaSite ul li{}
-                .mapaSite a{}
-                    .mapaSite a:hover{}
         
         /*Estilo da seção criadoras*/
         .criadoras{}
-            .criadoras h5{}
             .criadoras ul li {}
 
     /*Aplicando responsividade na página*/
+    /*Largura de até 600px*/
     @media only screen and (max-width:600px){
+        /*Cabeçalho*/
         .cabecalho button{
             display: block;
             border: none;
@@ -391,6 +476,32 @@ a{
         .cabecalho #toggle.ativo::after{
             transform: translateY(0) rotate(-45deg);
         }
+
+
+        /*Rodapé*/
+        .rodape{
+            flex-direction: column;
+        }
+        .rodapeBox{
+            width: 100%;
+            text-align: center;
+        }
+         .rodapeBox:nth-child(4){
+             width: 100%;
+         }
+    }
+
+    @media (max-width: 950px){
+        .rodape{
+            flex-direction: column;
+        }
+        .rodapeBox{
+            width: 100%;
+            text-align: center;
+        }
+         .rodapeBox:nth-child(4){
+             width: 100%;
+         }
     }
 
     
