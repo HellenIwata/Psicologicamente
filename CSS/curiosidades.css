@@ -99,13 +99,16 @@ a{
                         position: absolute;
                         top: 5rem;
                         right: 9.6rem;
+                        margin: 0;
                         background-color: #6ca89e;
                         width: 23%;
+                        padding: .3rem;
                         padding: 0.6rem;
                         visibility: hidden;
                         transition: .3s;
                         z-index: 1;
                         border-radius: 5%;
+                        
                     }
                     .menu .boxCuriosidades::before{
                         content: " ";
@@ -124,8 +127,10 @@ a{
                         }
 
                             .menu .boxCuriosidades ul li{
-                                border-bottom: solid 2px #fff;
+                                border-bottom: solid 2px #fff; 
                                 padding-bottom: 0.2rem;
+                                margin: 0;
+                                padding: .3rem;                           
                                 align-items: center;
                                 font-size: 1rem;
                             }
