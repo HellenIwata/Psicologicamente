@@ -4,6 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Links Boostraps-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+         <!--Link icones-->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"/>
+         <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet"/>
+
+        <!--Links CSS-->
+        <link rel="stylesheet" href="./CSS/estiloGeral.css">
         <link rel="stylesheet" href="./CSS/locais.css">
         <title>Locais de atendimento</title>
     </head>
@@ -11,65 +21,261 @@
         <!--Início do conteúdo da aplicação-->
         <main class="containerPrincip">
 
-            <!--Início do cabecalho-->
-            <header class="cabecalho">
-                <!--Início do menú de navegação-->
-                <nav class="cabecalhoMenuNav">
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="curiosidades.html">Curiosidades</a></li>
-                        <li><a href="locais.html">Locais de atendimento</a></li>
-                    </ul>
-                </nav>
-                <!--Fim do menú de navegação-->
+            <!--Início do cabeçalho-->
+            <header>
+                <!--Inserindo logo-->
+                <a class="navbar-brand" href="index.html"><img src="./IMG/logoSite.png" alt="Logo do psicologicamento"></a>
+                <nav class="navbar navbar-expand-lg">              
+                    
+                    <!--Botão menu responsivo-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"  aria-expanded="false" aria-label="Alterna navegação">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav mr-5">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Início <span class="sr-only">(página atual)</span></a>
+                            </li>
+                                
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="curiosidades.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Curiosidades</a>
 
-                <!--Inserindo o logo no cabeçalho-->
-                <figure class="logoCabecalho">
-                    <a href="curiosidades.html"><img src="./IMG/logoSite.png" alt="Logo do Psicologicamente"></a>
-                </figure>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="./curiosidades.html/abrirHistPsico">História da Psicologia</a>
+                                    <a class="dropdown-item" href="abrirAreasAtuacao">Áreas de atuação do psicólogo</a>
+                                    <a class="dropdown-item" href=" abrirTiposTranstornos">Transtornos e distúrbios mentais</a>
+                                    <a class="dropdown-item" href="abrirTiposTerapias">Terapias existentes</a>
+                                    <a class="dropdown-item" href="#">Exercícios físicos</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="locais.html">Locais de atendimento</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--Fim menu navegação-->
             </header>
+            <!--Fim cabecaçalho-->
+
+            <section>
+                <article class="cardLocais">
+                    <img src="./IMG/mapa.jpg" alt="mapa">
+
+                    <h1>Atendimentos Físicos em São Paulo</h1>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Clinica</th>
+                            <th scope="col">Telefone para contato</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Grupo Posture Saúde Corporativa</td>
+                            <td>(11) 2628-8949</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Psicológica Durval Marcondes (Clínica-Escola do IPUSP)</td>
+                            <td>(11) 3091-8248</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Núcleo de-stress</td>
+                            <td>(11) 93800-6896</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Acolher Atendimento Psicológico e Qualidade de Vida</td>
+                            <td>(11) 97607-0356</td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                    <h1>Atendimentos Online</h1>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Clinica</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td><a href="https://www.clinicasanlis.com.br/">Site clinica Sanlis</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td><a href="https://www.vittude.com/">Site Vittude</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td><a href="https://www.telavita.com.br/">Site Telavita</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td><a href="https://www.psicologiaviva.com.br/">Site Psicologia Viva</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td><a href="https://www.instagram.com/plenopsique/">Instagram Pleno Psique</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td><a href="https://www.instagram.com/psicologiadeapoio/">Instagram Psicologia de Apoio</a></td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                    <p><strong>Atendimentos Domiciliares ou Home Care:</strong></p>
+
+                    <ul>
+                        <li><strong>Site/Clinica Pronto Care:</strong>
+                        https://www.prontocare.com.br/amp/</li>
+                        <li><strong>Site/Clinica Home Angels: </strong>
+                        https://www.homeangels.com.br/></li>
+                    </ul><br>
+
+                    <p><strong>Atendimentos graitutos:</strong></p>
+
+                    <ul>
+                        <li><strong>Atendimento Psicológico gratuito ou preço popular Paróquia São Luís Gonzaga -</strong>
+                                Av. Paulista, 2378
+                                3231-5954
+                                Quintas, das 10h às 19h. Oferece atendimentos em até 12 sessões, 
+                                gratuitas ou a preço simbólico.</li>
+                        <li><strong>Clínica de Psicologia da Universidade Cruzeiro do Sul –</strong> Núcleo de Estudo e 
+                            Atendimento Psicológico (NEAP). Atendimento psicológico gratuito 
+                            Rua Galvão Bueno, 724
+                            2297-4442
+                            Segunda a sexta, das 13h30 às 20h30. Sábados, das 8h30 às 12h30.</li>
+                        <li><strong>IP USP INSTITUTO DE PSICOLOGIA DA USP
+                            Serviço de Aconselhamento Psicológico (SAP) -</strong>
+                            Avenida Professor Mello de Morais, 1721 - Bloco D - Butantã
+                            3091-5015
+                            Atendimento em esquema plantão. De 2ª a 6ª, das 7h às 19h. Sábados das 8h às 13h.</li>
+                        <li><strong>PUC-Campinas -</strong>  O acolhimento acontece por Skype, às terças-feiras, das 14h às 18h, às 
+                            quartas e quintas, das 8h às 12h, e às sextas, das 17h às 21h, exceto em feriados. 
+                            O contato no Skype é plantaopsicopuccampinas@gmail.com">, e mais informações podem ser 
+                            consultadas pelos telefones (19) 97166-5474 e (19) 3343-6846.</li>
+                        <li><strong>UNINOVE:</strong> 
+                            Endereço: Rua Vergueiro, 235, Liberdade
+                            Telefone: (11) 2633-9000</li>
+                        <li><strong>Universidade Cruzeiro Do Sul (UNICSUL) -</strong>
+                            Endereço: Campus São Miguel. Rua Taiuvinha, 26
+                            Telefone: (11) 2037-5853</li>
+                        <li><strong>Cínica De Psicologia FMU -</strong>
+                            Endereço: Avenida Santo Amaro, 1239 – Vila Nova Conceição
+                            Telefone: (11) 3040-3400 ou (11) 3040-3400 ramal 2316</li>
+                        <li><strong>Centro de Assistência em Transtornos do Espectro Obsessivo Compulsivo (CENTOC) - </strong>
+                            Endereço: Rua Botucatu, 416 – Vila Clementino
+                            Telefone: (11) 5549-4374</li>
+                        <li><strong>Universidade Paulista (Unip) - </strong> A Universidade Paulista (Unip) conta com os Centros de Psicologia Aplicada (CPAs), que oferecem gratuitamente seis modalidades 
+                            atendimento psicológico a crianças, adolescentes, adultos, famílias e casais, que necessitem da avaliação psicológica e do tratamento 
+                            de transtornos comportamentais, emocionais, e de distúrbios afetivos, relacionais e de conduta. Para informações de cada unidade, 
+                            acesse o "https://www.unip.br/presencial/universidade/clinicas/cpa.aspx "</li>
+                    </ul>
+                </article>
+            </section>
+
+            <div>
+                <article class="card">
+                    <h3>CVV – Centro de Valorização da Vida realiza apoio emocional e prevenção do suicídio</h3>
+                    <img src="./IMG/188.png" alt="CVV - Centro de Valorização a Vida"
+                    width="100%">
+                    <p><strong>Atenção:</strong> Este site não oferece tratamento ou aconselhamento imediato para pessoas 
+                        em crise suicida. Em caso de crise, ligue para 188 (CVV) ou acesse o site <a href="www.cvv.org.br">www.cvv.org.br</a>. Em caso de emergência, 
+                        procure atendimento em um hospital mais próximo.
+                        </p>
+                </article>
+                <article class="card">
+                    <h3>Universidade Presbiteriana Mackenzie</h3>
+                    <img src="./IMG/mackenzie.jpg" alt="Mackenzie"
+                    width="100%">
+                    <p>Os horários para atendimento telefônico durante a quarentena é de2ª à 6ª feira das 09:00 às 16:00. Para mais informações, o contato deve ser feito pelo email: <a href="mailto: ccbs.clinicapsicologica@mackenzie.br">ccbs.clinicapsicologica@mackenzie.br</a> .</p>
+                </article>
+            </div>
 
         
-            <!--Início rodapé-->
+            <!--Inicio rodapé-->
             <footer class="rodape">
-            <div class="logoRodape">
-                <figure class="rodapeLogo">
-                    <img src="./IMG/logoSite.png" alt="logo do Psicologicamente">
-                </figure>
-            </div>
-            <section class="redesSociais">
-                <div>
-                    <h5>Redes Sociais</h5>
-                    <a href="https://www.facebook.com/psic.camente/"><img src="./IMG/iconFacebook.png" alt="ícone do facebook com link"></a>
-                    <a href="https://www.instagram.com/psic.ologicamente/"><img src="./IMG/iconInstagram.png" alt="ícone do Instagram com link"></a>
-                    <a href="mailto:psic.ologicamente.pi@gmail.com"><img src="./IMG/iconEmail.png" alt="ícone do e-mail com link"></a>
-                </div>
-            </section>
+                    <div class="logoRodape">
+                        <figure class="rodapeLogo">
+                            <img
+                                src="./IMG/logoSite.png"
+                                alt="logo do Psicologicamente"
+                            />
+                        </figure>
+                    </div>
+                    <section class="redesSociais">
+                        <div class="rodapeBox">
+                            <h5>Redes Sociais</h5>
 
-            <section class="mapaSite">
-                <div>
-                    <h5>Mapa do site</h5>
-                    <ul>
-                        <li><a href="index.html]">ÍNICIO</a></li>
-                        <li><a href="curiosidades.html">CURIOSIDADES</a></li>
-                        <li><a href="locais.html">LOCAIS DE ATENDIMENTO PSICOLÓGICO</a></li>
-                    </ul>
-                </div>
-            </section>
+                            <div class="iconsRedesSociais">
+                                <a
+                                    href="https://www.facebook.com/psic.camente/"
+                                    target="_blank"
+                                    ><i class="bx bxl-facebook"></i
+                                ></a>
 
-            <section class="criadoras">
-                <div>
-                    <h5>Desenvolvedoras da aplicação</h5>
-                    <ul>
-                        <li>Hellen</li>
-                        <li>Lara</li>
-                        <li>Larissa</li>
-                        <li>Raquel</li>
-                    </ul>
-                </div>
-            </section>
+                                <a
+                                    href="https://www.instagram.com/psic.ologicamente/"
+                                    target="_blank"
+                                    ><i class="bx bxl-instagram"></i
+                                ></a>
+
+                                <a href="mailto:psic.ologicamente.pi@gmail.com"
+                                    ><i class="bx bx-mail-send"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mapaSite">
+                        <div class="rodapeBox">
+                            <h5>Mapa do site</h5>
+                            <ul>
+                                <li><a href="index.html]">ÍNICIO</a></li>
+                                <li>
+                                    <a href="curiosidades.html">CURIOSIDADES</a>
+                                </li>
+                                <li>
+                                    <a href="locais.html"
+                                        >LOCAIS DE ATENDIMENTO PSICOLÓGICO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="criadoras">
+                        <div class="rodapeBox">
+                            <h5>Desenvolvedoras</h5>
+                            <ul>
+                                <li>Hellen</li>
+                                <li>Lara</li>
+                                <li>Larissa</li>
+                                <li>Raquel</li>
+                            </ul>
+                        </div>
+                    </section>
             </footer>
-            <!--Fim rodapé-->
+            <!--Fim rodape-->
+            </main>
+        <!--Inicio javascript bootstrap-->
+        <div>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </div>
+        <!--Fim javascript bootstrap-->
         </main>
     </body>
 </html>
