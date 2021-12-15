@@ -1,0 +1,50 @@
+
+.row{
+    padding: 0 20px;
+    display: table;
+}
+section{
+    float: left;
+    width: 75%;
+}
+aside{
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.card{
+    background-color: #DFE4EB;
+    padding: 20px;
+    margin-top: 20px;
+}
+.card img{
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/*Tablets*/
+@media screen and (max-width: 768px){
+    section, aside{
+        width: 100%;
+        padding: 0;
+    }
+}
+/*Celulares*/
+@media screen and (max-width: 600px){
+    nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    nav a:hover{
+        background-color: transparent; 
+    }
+}
+@media screen and
+(max-width: 380px) and
+(orientation:portrait) {
+    /*estilo*/
+}
