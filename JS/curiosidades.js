@@ -1,4 +1,4 @@
-const toggle = document.getElementById('toggle');
-toggle.addEventListener('click', () => {
-    toggle.classList.toggle('ativo')
-});
+// const toggle = document.getElementById('toggle');
+// toggle.addEventListener('click', () => {
+//     toggle.classList.toggle('ativo')
+// });
