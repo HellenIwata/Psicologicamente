@@ -4,72 +4,196 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Link bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+         <!--Link icones-->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"/>
+         <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet"/>
+
+        <!--Links CSS estilo geral e especifico-->
         <link rel="stylesheet" href="./CSS/index.css">
+        <link rel="stylesheet" href="./CSS/estiloGeral.css" />
+        <link rel="stylesheet" href="./CSS/estiloCuriosidades.css">
+
         <title>Psicologicamente</title>
     </head>
     <body>
-        <!--Início do conteúdo da aplicação-->
-        <main class="containerPrincip">
-
-            <!--Início do cabecalho-->
-            <header class="cabecalho">
-                <!--Início do menú de navegação-->
-                <nav class="cabecalhoMenuNav">
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="curiosidades.html">Curiosidades</a></li>
-                        <li><a href="locais.html">Locais de atendimento</a></li>
-                    </ul>
-                </nav>
-                <!--Fim do menú de navegação-->
-
-                <!--Inserindo o logo no cabeçalho-->
-                <figure class="logoCabecalho">
-                    <a href="curiosidades.html"><img src="./IMG/logoSite.png" alt="Logo do Psicologicamente"></a>
-                </figure>
-            </header>
-
         
-            <!--Início rodapé-->
+
+        <!--Início do conteúdo da páina início-->
+        <main class="principal">
+
+           <!--Início do cabeçalho-->
+            <header>
+                <a class="navbar-brand" href="index.html"><img src="./IMG/logoSite.png" alt="Logo do psicologicamento"></a>
+                <nav class="navbar navbar-expand-lg">
+                    <!--Inserindo logo-->
+                    
+                    
+                    <!--Botão menu responsivo-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"  aria-expanded="false" aria-label="Alterna navegação">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav mr-5">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Início <span class="sr-only">(página atual)</span></a>
+                            </li>
+                                
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="curiosidades.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Curiosidades</a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="./curiosidades.html/abrirHistPsico">História da Psicologia</a>
+                                    <a class="dropdown-item" href="abrirAreasAtuacao">Áreas de atuação do psicólogo</a>
+                                    <a class="dropdown-item" href=" abrirTiposTranstornos">Transtornos e distúrbios mentais</a>
+                                    <a class="dropdown-item" href="abrirTiposTerapias">Terapias existentes</a>
+                                    <a class="dropdown-item" href="#">Exercícios físicos</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="locais.html">Locais de atendimento</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--Fim menu navegação-->
+            </header>
+            <!--Fim cabecaçalho-->
+            
+            
+
+            <!--Inicio card chamativos-->
+            <section class="sectionCard">
+                <div class="row">
+                    <div class="col-sm-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Você sabe em quantas áreas o psicólogo pode atuar?</h5>
+                          <p class="card-text">Caso tenha interesse em saber, clique em "Saiba Mais"</p>
+                          <a href="#" class="btn btnColor">Saiba Mais</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <iframe  width="100%" height="94%" src="https://www.youtube.com/embed/videoseries?list=PL_ruRCnl9-RJJj7dmMBaUEJsDiugdTQtb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Quais exercícios físicos podem ajudar a melhorar a nossa saúde mental?</h5>
+                                <p class="card-text">Caso tenha interesse em saber, clique em "Saiba Mais"</p>
+                                <a href="#" class="btn btnColor">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Quais são os tipos de transtornos/distúrbios psicológicos?</h5>
+                            <p class="card-text">Caso tenha interesse em saber, clique em "Saiba Mais"</p>
+                            <a href="#" class="btn btnColor">Saiba Mais</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Conheça locais que oferecem suporte de forma gratuita e paga pela grande São Paulo</h5>
+                            <p class="card-text">Caso tenha interesse em saber, clique em "Saiba Mais"</p>
+                            <a href="#" class="btn btnColor">Saiba Mais</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Veja mais curiosidades sobre a psicologia</h5>
+                            <p class="card-text">Acesse o nosso menu curiosidades ou clique em "Visitar" para conhecer a nossa página de curiosidades.</p>
+                            <a href="curiosidades.html" class="btn btnColor">Visitar</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Fim card chamativos-->
+
+            <!--Inicio rodapé-->
             <footer class="rodape">
-            <div class="logoRodape">
-                <figure class="rodapeLogo">
-                    <img src="./IMG/logoSite.png" alt="logo do Psicologicamente">
-                </figure>
-            </div>
-            <section class="redesSociais">
-                <div>
-                    <h5>Redes Sociais</h5>
-                    <a href="https://www.facebook.com/psic.camente/"><img src="./IMG/iconFacebook.png" alt="ícone do facebook com link"></a>
-                    <a href="https://www.instagram.com/psic.ologicamente/"><img src="./IMG/iconInstagram.png" alt="ícone do Instagram com link"></a>
-                    <a href="mailto:psic.ologicamente.pi@gmail.com"><img src="./IMG/iconEmail.png" alt="ícone do e-mail com link"></a>
-                </div>
-            </section>
+                    <div class="logoRodape">
+                        <figure class="rodapeLogo">
+                            <img
+                                src="./IMG/logoSite.png"
+                                alt="logo do Psicologicamente"
+                            />
+                        </figure>
+                    </div>
+                    <section class="redesSociais">
+                        <div class="rodapeBox">
+                            <h5>Redes Sociais</h5>
 
-            <section class="mapaSite">
-                <div>
-                    <h5>Mapa do site</h5>
-                    <ul>
-                        <li><a href="index.html]">ÍNICIO</a></li>
-                        <li><a href="curiosidades.html">CURIOSIDADES</a></li>
-                        <li><a href="locais.html">LOCAIS DE ATENDIMENTO PSICOLÓGICO</a></li>
-                    </ul>
-                </div>
-            </section>
+                            <div class="iconsRedesSociais">
+                                <a
+                                    href="https://www.facebook.com/psic.camente/"
+                                    target="_blank"
+                                    ><i class="bx bxl-facebook"></i
+                                ></a>
 
-            <section class="criadoras">
-                <div>
-                    <h5>Desenvolvedoras da aplicação</h5>
-                    <ul>
-                        <li>Hellen</li>
-                        <li>Lara</li>
-                        <li>Larissa</li>
-                        <li>Raquel</li>
-                    </ul>
-                </div>
-            </section>
+                                <a
+                                    href="https://www.instagram.com/psic.ologicamente/"
+                                    target="_blank"
+                                    ><i class="bx bxl-instagram"></i
+                                ></a>
+
+                                <a href="mailto:psic.ologicamente.pi@gmail.com"
+                                    ><i class="bx bx-mail-send"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mapaSite">
+                        <div class="rodapeBox">
+                            <h5>Mapa do site</h5>
+                            <ul>
+                                <li><a href="index.html]">ÍNICIO</a></li>
+                                <li>
+                                    <a href="curiosidades.html">CURIOSIDADES</a>
+                                </li>
+                                <li>
+                                    <a href="locais.html"
+                                        >LOCAIS DE ATENDIMENTO PSICOLÓGICO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="criadoras">
+                        <div class="rodapeBox">
+                            <h5>Desenvolvedoras</h5>
+                            <ul>
+                                <li>Hellen</li>
+                                <li>Lara</li>
+                                <li>Larissa</li>
+                                <li>Raquel</li>
+                            </ul>
+                        </div>
+                    </section>
             </footer>
-            <!--Fim rodapé-->
-        </main>
+            <!--Fim rodape-->
+            </main>
+        <!--Inicio javascript bootstrap-->
+        <div>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </div>
+        <!--Fim javascript bootstrap-->
     </body>
 </html>

@@ -1,0 +1,45 @@
+/*Estilizando a seção cards*/
+.sectionCard {
+    padding: 40px;
+    width: 100%;
+} 
+
+    /*Estilizando os cards*/
+    .card {
+        background-color: #d0d7e2;
+        padding-bottom: 1rem;
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+        /*Adicionando bordar e arredondando as bordas do video*/
+        iframe {
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 0.25rem;
+        }
+
+        .card-title {
+            padding: .2rem;
+            font-size: 1.5rem;
+        }
+
+        .card-text{
+            text-align: center;
+            padding: .2rem;
+        }
+        .btn{
+            background-color: #6ca89e;
+            transition: linear 400ms;  
+            color: #fff;     
+        }
+            .btn:hover{
+                background-color: #a4e2d7;
+            }
+                .btn a{
+                    text-align: center;
+                    color: #fff;
+                }
+                .btnColor {
+                    
+                    background-color: #6ca89e;
+                    border-color: #6ca89e;
+                }
