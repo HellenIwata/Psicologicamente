@@ -146,7 +146,9 @@ header{
                     transition: linear 400ms;
                     /* justify-content: ; */
                 }
-        
+                .bx{
+                    width: 3rem;
+                }
         /*Estilo do mapa do site*/
         .mapaSite{}
             .mapaSite ul li{}
