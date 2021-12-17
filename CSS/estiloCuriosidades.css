@@ -69,7 +69,9 @@
             bottom: 0;
             right: 0;
             left: 0%;
-            background-color: #6ca89e;
+            background-color: rgba(255, 255, 255, 0.100);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             z-index: 99999;
             opacity: 0;
             -webkit-transition:  400ms ease-in;
@@ -101,7 +103,7 @@
                     padding: 1.6rem 2.5rem 2.1rem 2.5rem;
                     -webkit-border-radius: .7rem;
                     -moz-border-radius: .7rem;
-                    background-color: #DFE4EB;
+                    background-color: #fff;
                     text-align: justify;
                 }
                 .home h3 {
@@ -110,12 +112,15 @@
                     padding-bottom: 1.3rem;
                     color: #133530;
                     font-size: 1.6rem;
+                    font-weight: 700;
                 }
                 .home p {
                     margin-top: 2.5%;
                     margin-bottom: 2.5%;
                     padding: .01%;
                 }
+
+                
                     .home ul li{}  
                         .fechar{
                             background-color: #606061;
@@ -133,7 +138,7 @@
                             border-radius: 12px;
                         }
                         .fechar:hover{
-                            background-color: #133530;
+                            color: #6ca89e;
                         }
 
                         /*Estilo da area de atuação especificia*/ 
@@ -154,8 +159,15 @@
                         }
 
                         .list-group-item{
-                            background-color: #b8bcc2;
+                            background-color: #fff;
                             text-align: left;
+                            font-weight: 500;
+                        }
+                        .list-group-item.active {
+                            color: #fff;
+                            background-color: #6ca89e;
+                            border-color: #6ca89e;
+                            font-weight: 500;
                         }
     /*Aplicando responsividade na página*/
     /*Largura de até 600px*/

@@ -61,17 +61,3 @@
 
 
 
-@media(max-width: 1200px){
-    .card{
-        background-color: tomato;
-        height: 80%;
-    }
-}
-@media(max-width: 786px){
-    .card{
-        background-color: green;
-        height: 95%;
-        padding: 0;
-        margin: 0;
-    }
-}

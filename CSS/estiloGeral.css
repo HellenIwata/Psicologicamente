@@ -22,6 +22,7 @@ h1, h2, h4, h5{
     font-size: 1.5rem;
     color: #6ca89e;
     text-align: center;
+    font-weight: 700;
 }
 
 img{
@@ -29,12 +30,11 @@ img{
     display: block;
 }
 a{
-    color: #000;
     text-decoration: none;
 }
 
 ::-webkit-scrollbar{
-    background-color: #133530;
+    background-color: rgb(9, 94, 85);
     width: .7rem;
 }
 ::-webkit-scrollbar-thumb{
@@ -44,11 +44,9 @@ a{
 
 /*Estilizando o cabeçalho */
 header{
-    
     background-color: #C5F9F0;
     display: flex;
     justify-content: space-between;
-    
 }
 
     /*Estilo do logo*/
@@ -59,24 +57,38 @@ header{
         overflow: hidden;
     }
             .navbar-brand img{
-                height: 100%;
-                width: 100%;
+                height: 4.8rem;
+                width: 4.8rem;
                 object-fit: cover;
                 position: absolute;
             }
-    .navbar-collapse a{
-        color: #1b4b44;
-    }
-    .navbar-collapse a:hover{
-        color: #6ca89e;
-    }
-    .dropdown-menu{
-        background-color: #DFE4EB;
-        color: #1b4b44;
-    }
-    .navbar .navbar-toggler{
-        background-color: #1b4b44;
-    }
+
+             /*Estilo item menu*/
+            .nav-item .nav-link a{
+                color: #fff;
+                font-weight: 700
+            }
+            .navbar-collapse a:hover{
+                color: rgb(9, 94, 85);
+            }
+            .navbar-nav.nav-item a{
+                font-weight: 700
+            }
+            .dropdown-menu{
+                background-color: #fff;
+                color: #1b4b44;
+                background-color: rgba(255, 255, 255, 0.100);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+            }
+
+        /*Estilo botão menu*/
+        .navbar-toggler{
+            background-color:#6ca89e ;
+        }
+        .nav-link a{
+            color: rgb(9, 94, 85);
+        }
 
     /*Estilizando o rodapé*/
     .rodape{
@@ -156,3 +168,20 @@ header{
         /*Estilo da seção criadoras*/
         .criadoras{}
             .criadoras ul li {}
+
+@media(max-width: 1200px){
+    .dropdown-menu.sub-menu{
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.527);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+    }
+}
+@media(max-width: 786px){
+    .dropdown-menu.sub-menu{
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.527);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+    }
+}
