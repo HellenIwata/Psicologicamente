@@ -23,63 +23,37 @@
         <main class="principal">
             <!--Início do cabeçalho-->
             <header>
-                <!--Inserindo o logo no cabeçalho-->
-                <figure class="logoCabecalho">
-                    <a href="curiosidades.html"><img src="./IMG/logoSite.png" alt="Logo do Psicologicamente"/></a>
-                </figure>
+                <!--Inserindo logo-->
+                <a class="navbar-brand" href="index.html"><img src="./IMG/logoSite.png" alt="Logo do psicologicamento"></a>
+                
+                <nav class="navbar navbar-expand-lg navbar-light">  
+                    <!--Botão menu responsivo-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"  aria-expanded="false" aria-label="Alterna navegação">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav mr-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+                                
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="curiosidades.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Curiosidades</a>
 
-                <!--Início menu de navegação-->
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                                </li>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="curiosidades.html#abrirHistPsico">História da Psicologia</a>
+                                    <a class="dropdown-item" href="curiosidades.html#abrirAreasAtuacao">Áreas de atuação do psicólogo</a>
+                                    <a class="dropdown-item" href="curiosidades.html#abrirTiposTranstornos">Transtornos e distúrbios mentais</a>
+                                    <a class="dropdown-item" href="curiosidades.html#abrirTiposTerapias">Terapias existentes</a>
+                                    <a class="dropdown-item" href="curiosidades.html#abrirAtividades">Exercícios físicos</a>
+                                </div>
+                            </li>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="curiosidades.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"aria-expanded="false">Curiosidades</a>
-                                    <!--Inicio dropdown-->
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li>
-                                            <a class="dropdown-item" href="curiosidades.html">Curiosidades gerais</a>
-                                        </li>
-
-                                        <li>
-                                            <a class="dropdown-item" href="./curiosidPag/historiaPsico.html">História da Psicologia</a>
-                                        </li>
-
-                                        <li>
-                                            <a class="dropdown-item" href="#abrirAreasAtuacao">Áreas de atuação do psicólogo</a>
-                                        </li>
-
-                                        <li>
-                                            <a class="dropdown-item" href="#abrirTiposTranstornos">Transtornos e distúrbios mentais</a>
-                                        </li>
-
-                                        <li>
-                                            <a class="dropdown-item" href="#abrirTiposTerapias">Terapias existentes</a>
-                                        </li>
-                                        
-                                        <li>
-                                            <a class="dropdown-item" href="#abrirAtividades">Exercícios físicos e mentais</a>
-                                        </li>
-                                    </ul>
-                                    <!--Fim dropdown-->
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="locais.html">Locais de atendimento</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="pos-f-t">
-                        <nav class="navbar navbar-dark ">
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                        </nav>
+                            <li class="nav-item">
+                                <a class="nav-link" href="locais.html">Locais de atendimento</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
                 <!--Fim menu navegação-->
@@ -103,7 +77,7 @@
                         místiscas, atividades de pessoas e eventos.
                     </p>
                     <button class="btnSaibaMais">
-                        <a href="#abrirHistPsico">Saiba mais</a>
+                        <a href="#abrirHistoriaPsicologia">Saiba mais</a>
                     </button>
                 </div>
                 <!--Fim convite para ler sobre a História da Psicologia-->
@@ -201,7 +175,7 @@
 
             <!--Início do conteúdo-->
             <section class="openConteudo">
-                <div id="abrirHistPsico" class="openDialog">
+                <div id="abrirHistoriaPsicologia" class="openDialog">
                     <div class="home">
                         <a href="#fechar" class="fechar">X</a>
                         <h2>História da Psicologia</h2>
@@ -249,7 +223,7 @@
                 <div id="abrirAreasAtuacao" class="openDialog">
                     <div class="home">
                         <a href="#fechar" class="fechar">X</a>
-                        <h2>Áreas de atuação do psicólogo</h2>
+                        <h3>Áreas de atuação do psicólogo</h2>
                         <p>
                             O psicólogo formado pode atuar em qualquer área da psicologia, segundo a Resolução CFP 13/2007, como na psicologia clínica, psicologia escolar/educacional, psicologia do esporte, psicologia hospitalar, psicologia jurídica, neuropsicologia, psicologia
                             organizacional e do trabalho, psicomotricidade; psicopedagogia; psicologia social e psicologia de
@@ -289,7 +263,7 @@
                               <div class="tab-content" id="nav-tabContent">
                                     <!--Inicio Neuropsicologia-->
                                     <div class="tab-pane fade show active" id="abrirNeuropsicologia" role="tabpanel" aria-labelledby="list-home-list">
-                                        <h3>Neuropsicologia</h3>
+                                        <h2>Neuropsicologia</h2>
                                         <p>Os objetivos práticos são levantar dados clínicos que permitam diagnosticar e estabelecer tipos de intervenção, de reabilitação particular e específica para indivíduos e grupos de pacientes em condições nas quais: </p>
                                         <ol>
                                             <li>
@@ -319,7 +293,7 @@
 
                                     <!--Inicio psicologia clinica-->
                                     <div class="tab-pane fade" id="abrirPsicoClin" role="tabpanel" aria-labelledby="list-profile-list">
-                                        <h3>Psicologia clínica</h3>
+                                        <h2>Psicologia clínica</h2>
                                         <p>O especialista participa de programas de atenção primária em centros e postos de saúde na comunidade, organizando grupos específicos na prevenção de doenças ou no desenvolvimento de formas de lidar com problemas específicos já instalados, procurando evitar seu agravamento em contribuir ao bem-estar psicológico.</p>
                                         <p>Acompanha programas de pesquisa, treinamento e desenvolvimento de políticas de saúde mental, participando de sua elaboração, coordenação, implementação e supervisão, para garantir a qualidade da atenção à saúde mental em nível de macro e microssistema. Participa de instituições específicas de saúde mental, como hospitais-dia, unidades psiquiátricas e outros, podendo intervir em quadros psicopatológicos, tanto individual como grupalmente, auxiliando no diagnóstico e no esquema terapêutico proposto em equipe.</p>
                                         <p>Atua no estudo, diagnóstico e prognóstico em situações de crise, em problemas do desenvolvimento ou em quadros psicopatológicos, utilizando, para tal, procedimentos de diagnóstico psicológico tais como: entrevista, utilização de técnicas de avaliação psicológica e outros.</p>
@@ -328,7 +302,7 @@
 
                                     <!--Inicio psicologia escolar-->
                                     <div class="tab-pane fade" id="abrirPsicoEsc" role="tabpanel" aria-labelledby="list-messages-list">
-                                        <h3>Psicologia escolar/educacional</h3>
+                                        <h2>Psicologia escolar/educacional</h2>
                                         <p>O especialista em conjunto com a equipe, colabora com o corpo docente e técnico na elaboração, implantação, avaliação e reformulação de currículos, de projetos pedagógicos, de políticas educacionais e no desenvolvimento de novos procedimentos educacionais. No âmbito administrativo, contribui na análise e intervenção no clima educacional, buscando melhor funcionamento do sistema que resultará na realização dos objetivos educacionais. Para isso realiza tarefas como, por exemplo:</p>
                                         <ol>
                                             <li>
@@ -344,7 +318,7 @@
 
                                     <!--Inicio psicologia esportiva-->
                                     <div class="tab-pane fade" id="abrirPsicoEsport" role="tabpanel" aria-labelledby="list-settings-list">
-                                        <h3>Psicologia esportiva</h3>
+                                        <h2>Psicologia esportiva</h2>
                                         <p>A atuação do psicólogo do esporte está voltada tanto para o esporte de alto rendimento, ajudando atletas, técnicos e comissões técnicas a fazerem uso de princípios psicológicos para alcançar um nível ótimo de saúde mental, maximizar rendimento e otimizar a performance, quanto para a identificação de princípios e padrões de comportamentos de adultos e crianças participantes de atividades físicas.</p>
                                         <ul>
                                             <li>
@@ -365,7 +339,7 @@
 
                                     <!--Inicio psicologia hospitalar-->
                                     <div class="tab-pane fade" id="abrirPsicoHospit" role="tabpanel" aria-labelledby="list-settings-list">
-                                        <h3>Psicologia hospitalar</h3>
+                                        <h2>Psicologia hospitalar</h2>
                                         <p>O especialista promove intervenções direcionadas à relação médico/paciente, paciente/família, e paciente/paciente e do paciente em relação ao processo do adoecer, hospitalização e repercussões emocionais que emergem neste processo.</p>
                                         <p>No trabalho com a equipe multidisciplinar, preferencialmente interdisciplinar, participa de decisões em relação à conduta a ser adotada pela equipe, objetivando promover apoio e segurança ao paciente efamília, aportando informações pertinentes à sua área de atuação, bem como na forma degrupo de reflexão, no qual o suporte e manejo estão voltados para possíveis dificuldades operacionais e/ou subjetivas dos membros da equipe.</p>
                                         <p>Oferece e desenvolve atividades em diferentes níveis de tratamento, tendo como sua principal tarefa a avaliação e acompanhamento de intercorrências psíquicas dos pacientes que estão ou serão submetidos a procedimentos médicos, visando basicamente a promoção e/ou a recuperação da saúde física e mental.
@@ -375,7 +349,7 @@
 
                                     <!--Inicio psicologia juridica-->
                                     <div class="tab-pane fade" id="abrirPsicoJurid" role="tabpanel" aria-labelledby="list-settings-list">
-                                        <h3>Psicologia jurídica</h3>
+                                        <h2>Psicologia jurídica</h2>
                                         <p>O especialista atua como perito judicial nas varas cíveis, criminais, Justiça do
                                         Trabalho, da família, da criança e do adolescente, elaborando laudos, pareceres e perícias, para serem anexados aos processos, a fim de realizar atendimento e orientação a crianças, adolescentes, detentos e seus familiares ; orienta a administração e os colegiados do sistema penitenciário sob o ponto de vista psicológico, usando métodos e técnicas adequados, para estabelecer tarefas educativas e profissionais que os internos possam exercer nos estabelecimentos penais.
                                     </p>
@@ -402,7 +376,7 @@
 
                                     <!--Inicio psicologia do trabalho-->
                                     <div class="tab-pane fade" id="abrirPsicoTrab" role="tabpanel" aria-labelledby="list-settings-list">
-                                        <h3>Psicologia do trabalho/organizações</h3>
+                                        <h2>Psicologia do trabalho/organizações</h2>
                                         <p>
                                             O especialista atua em atividades
                                             relacionadas a análise e desenvolvimento
@@ -443,7 +417,7 @@
 
                                     <!--Inicio psicologia social-->
                                     <div class="tab-pane fade" id="abrirPsicoSoc" role="tabpanel" aria-labelledby="list-settings-list">
-                                        <h3>Psicologia social</h3>
+                                        <h2>Psicologia social</h2>
                                         <p>
                                             Seu trabalho envolve proposições de
                                             políticas e ações relacionadas à comunidade
@@ -462,7 +436,7 @@
 
                                     <!--Inicio psicologia do transito-->
                                     <div class="tab-pane fade" id="abrirPsicoTrans" role="tabpanel" aria-labelledby="list-settings-list">
-                                        <h3>Psicologia de trânsito</h3>
+                                        <h2>Psicologia de trânsito</h2>
                                         <p>
                                         O especialista desenvolve estudos de campo e
                                         em laboratório:
@@ -513,7 +487,7 @@
 
                                     <!--Inicio psicomotricidade-->
                                     <div class="tab-pane fade" id="abrirPsicomotric" role="tabpanel" aria-labelledby="list-settings-list">
-                                        <h3>Psicomotricidade</h3>
+                                        <h2>Psicomotricidade</h2>
                                         <p>
                                             O especialista atua junto às crianças em
                                             fase de desenvolvimento:
@@ -552,7 +526,7 @@
 
                                     <!--Inicio Psicopedagogia-->
                                     <div class="tab-pane fade" id="abrirPsicopedag" role="tabpanel" aria-labelledby="list-settings-list">
-                                        <h3>Psicopedagogia</h3>
+                                        <h2>Psicopedagogia</h2>
                                         <p>
                                             Esse trabalho pode ser desenvolvido em
                                             diferentes níveis, propiciando aos
@@ -1957,7 +1931,6 @@
                         <ul>
                             <li>Hellen</li>
                             <li>Lara</li>
-                            <li>Larissa</li>
                             <li>Raquel</li>
                         </ul>
                     </div>
