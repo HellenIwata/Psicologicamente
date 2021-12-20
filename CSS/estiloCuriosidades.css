@@ -2,25 +2,26 @@
 
     /*Estilo doa abertura do popUp da página*/
     .navContainer{
+        position: relative;
         width:100%;
         display: flex;
-        height: 50rem;
-        position: relative;
-        float: left;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-bottom: 15rem;
         padding: .5rem;
+        
     }
         /*Estilo do popUp*/
         .textNav{
             width:31%;
             margin: 1%;
             position: relative;
-            float: left;
             text-align: justify;
-            margin-top: .5%;
-            
+            background-color: #fff;
+            /* background-color: rgba(255, 255, 255, 0.658); */
+            background-color: rgba(255, 255, 255, 0.849);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 0, 0, 0.219);
+            border-radius: .25rem;
         }
             .textNav a:hover{
                 color: #6ca89e;
@@ -28,35 +29,56 @@
             .textNav img{
                 width: 630px;
                 height: 226px;
+                border-top: 1px solid rgba(0, 0, 0, 0.219);
+                border-top-left-radius: .25rem;
+                border-top-right-radius: .25rem;
             }
             .textNav h1{
                 margin-top: 1%;
                 font-size: 1.2rem;
                 text-align: center;
-                padding: .5rem;
+                padding: 2.5% 2.5%;
+                color: rgb(9, 94, 85);
+                font-weight: 790;
             }
             .textNav p{
-                margin-top: auto;
                 font-size: 1rem;
                 padding: .24rem;
+                margin: 0 auto;
+                padding: 2.5% 5%;
             }
 
-            .textNav ul li{
-                list-style: circle;
+            .textNav ul{
+                padding: 3% 15%;
             }
+                .textNav ul li{
+                    list-style: circle;
+                }
             
-            .textNav .btnSaibaMais{
+            .btn{
+                /* background-color: slateblue; */
+                padding: 5%;
+                display: flex;
+                width: 100%;
+                height: 100px;
+                justify-content: center;
+                align-items: flex-end;
+            }
+
+            .btnSaibaMais{
                 border: none;
                 border-radius: .2rem;
                 padding: 0.5rem 0.9rem;
                 background-color: #6ca89e;
                 font-size: 1rem;
-                transition: linear 400ms;   
+                transition: linear 400ms;  
+                flex-direction: column;   
             }
-            .textNav .btnSaibaMais:hover{
+            
+            .btnSaibaMais:hover{
                 background-color: #a4e2d7;
             }
-                .textNav .btnSaibaMais a{
+                .btnSaibaMais a{
                     color: #fff;
                 }
 
@@ -97,7 +119,7 @@
                 pointer-events: auto;
             }
                 .home {
-                    width: 60rem;
+                    width: 90%;
                     position: relative;
                     margin: 5% auto;
                     padding: 1.6rem 2.5rem 2.1rem 2.5rem;
@@ -119,8 +141,6 @@
                     margin-bottom: 2.5%;
                     padding: .01%;
                 }
-
-                
                     .home ul li{}  
                         .fechar{
                             background-color: #606061;
@@ -170,81 +190,87 @@
                             font-weight: 500;
                         }
     /*Aplicando responsividade na página*/
+    @media only screen and (max-width: 768px){
+        .navContainer{
+            width: 100%;
+            display: flex;
+            height: auto;
+            justify-content: center;
+        }
+        .textNav{
+            flex-wrap: wrap;
+            width: 45%;
+            justify-content: space-between;
+        }
+
+        .openConteudo{
+            width: 100%;
+            display: flex;
+            height: auto;
+            justify-content: center;
+        }
+        .openDialog{
+            flex-wrap: wrap;
+            width: 45%;
+            justify-content: space-between;
+        }
+    }
     /*Largura de até 600px*/
     @media only screen and (max-width:600px){
-        /*Cabeçalho*/
-        .cabecalho button{
-            display: block;
-            border: none;
-            background: none;
-            outline: none;
-        }
-        .cabecalho #toggle{
-            position: relative;
+        .navContainer{
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 30px;
-            height: 30px;
-            background:#6ca89e;
-        }
-        .cabecalho nav{
-            display: none;
-        }
-        .cabecalho #toggle::before{
-            content: " ";
-            position: absolute;
-            width: 25px;
-            height: 2px;
-            background: #fff;
-            box-shadow: 0 10px 0 #fff;
-            transform: translateY(-10px);
-            transition: .2s;
-        }
-        .cabecalho #toggle::after{
-            content: " ";
-            position: absolute;
-            width: 25px;
-            height: 2px;
-            background: #fff;
-            transform: translateY(10px);
-            transition: .2s;
-        }
-        .cabecalho #toggle.ativo::before{
-            transform: translateY(0) rotate(45deg);
-            box-shadow: 0 0 0 #fff;
+            height: auto;
             
         }
-        .cabecalho #toggle.ativo::after{
-            transform: translateY(0) rotate(-45deg);
-        }
-
-
-        /*Rodapé*/
-        .rodape{
+        .textNav{
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
             flex-direction: column;
         }
-        .rodapeBox{
-            width: 100%;
-            text-align: center;
-        }
-         .rodapeBox:nth-child(4){
-             width: 100%;
-         }
-    }
 
-    @media (max-width: 950px){
-        .rodape{
+        .openDialog{
+            width: 100%;
+            display: flex;
+            height: auto; 
+        }
+        .home{
+            flex-wrap: wrap;
+            width: 90%;
+            justify-content: space-between;
             flex-direction: column;
         }
-        .rodapeBox{
-            width: 100%;
-            text-align: center;
+
+        .row{
+            overflow: scroll;
+            flex-direction: column;
+            display: flex;
+            height: 200px;
+            background-color: firebrick;
         }
-         .rodapeBox:nth-child(4){
-             width: 100%;
-         }
+        .col-8{
+            background-color:blue;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .col-4{
+            background-color: darkgreen;
+            width: 100%;
+            
+        }
+        .row::-webkit-scrollbar{
+            background-color: #133530;
+            width: .5rem;
+        }
+        .row::-webkit-scrollbar-thumb{
+            background-color: #a4e2d7;
+            border-radius: .9rem;
+            height: 5%;
+        }
     }
+
+    
 
     
 /*Fim estilização página Curiosidades*/

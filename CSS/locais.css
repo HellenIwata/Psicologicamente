@@ -1,84 +1,171 @@
-
-/*Estilizando o card*/
-.row{
-    padding: 0 20px;
-    display: table;
+/* Estilizando o container secundario */
+.containerSecundario{
+    display: flex;
+    justify-content: space-between;
 }
-section{
-    float: left;
-    width: 75%;
+.containerSecundario a{
+    text-decoration: none;
+    color: #000;
 }
-aside{
-    float: left;
-    width: 25%;
-    padding-left: 20px;
+.containerSecundario a:hover{
+    color: rgba(9, 94, 86, 0.897);
 }
 
+.titulo h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    color: rgb(9, 94, 85);
+    padding:.5%;
+    margin-top: 1.5%;
+}
+
+.suportePsico{
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5%;
+}
+/*Estilizando o seção Locais de Exemplo*/
+.secaoLocais-Exemplo{
+    justify-content: right;
+    flex-direction: column;
+    padding: 1.5%;
+    width: 40%;
+}
 .card{
     background-color: rgba(255, 255, 255, 0.678);
-    padding: 20px;
-    margin-top: 20px;
-    margin-right: 1.5%;
+    border: 1.8px solid rgba(9, 94, 85, 0.678);
+    flex-wrap: wrap;
 }
 
+.cardPrimario{
+    margin-bottom: 15%;
+}
 .card h3{
     color: #17413a;
     font-size: 1.3rem;
     font-weight: 700;
     text-align: center;
 }
+.card h6{
+    color: #17413a;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2%;
+}
 .card p{
     text-align: justify;
+    padding: 5%;
 }
-
 .card img{
-    width: 80%;
+    width: 70%;
     height: auto;
-    padding: 20px;
+    padding: 2% 4% 2% 4%;
     margin: 0 auto;
-}   
+} 
 
-/*Estilizando tabelas de locais de atendimento*/
-.cardLocais{
-    margin-top: 3%;
-    margin-left: 8%;
-    margin-right: 8%;
-    width: 60%;
+/*Estilizando seção Locais de atendimentoz*/
+.secaoLocaisDeAtendimento{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.atendimento{
+    flex-wrap: wrap;
+    padding-bottom:6%;    
+}
+/* Estilizando os widgets */
+.widgets{
+    background-color: rgba(255, 255, 255, 0.678);
+    border: 1.8px solid rgba(9, 94, 85, 0.678);
+    border-radius: .25rem;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.widgets summary{
+    flex-wrap: wrap;
+    height: auto;
     text-align: center;
-    display: flex;
-    /* justify-content: space-between;
-    flex-direction: column; */
-    padding: 2%;
-    border-radius: .2rem;
+    font-weight: 750;
+}   
+    summary h1{
+        color: #17413a;
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding-top: 1%;
+    }
+    .bx-locais{
+        font-weight: 750;
+        font-size: 1.6rem;
+    }
+
+/* Estilizando as tabelas */
+.tabelas{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.432);
+    flex-wrap: wrap;
+}
+.tabelaTitulo{
+    text-align: center;
+    color: #6ca89e;
 }
 
-.locaisOnline{
-    background-color: #fff;
-    margin: 0 auto;
-}
-.locaisOnline h1{
-    padding: 1.8rem 1.8rem;
-}
-/*Tablets*/
-@media screen and (max-width: 768px){
-    section, aside{
+/* Responsividade containet principal */
+@media only screen and (max-width: 600px) {
+    .suportePsico{
+        /* background-color: salmon; */
+        display: flex;
+        width: 50%;
+        height: auto;
+        position: relative;
+        flex-wrap: wrap;        
+    }
+    .containerSecundario{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between ;
+    }
+    .secaoLocaisDeAtendimento{
+        /* background-color: seagreen; */
         width: 100%;
-        padding: 0;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: .8rem;
+        /* padding: 10px; */
+    } 
+    .bx-locais{
+        font-size: 1rem;
     }
-}
-/*Celulares*/
-@media screen and (max-width: 600px){
-    nav li{
-        float: none;
-        text-align: center;
+    #locaisGratuitos{
+        width:100%;
+        justify-content: space-between;
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .secaoLocais-Exemplo{
+        /* background-color: royalblue; */
+        display: flex;
+        position: relative;
+        width: 50%;
+        height: auto;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    .card{
         width: 100%;
+        height: 100%;
+        flex-wrap:wrap;
+        flex-direction: column;
     }
-    nav a:hover{
-        background-color: transparent; 
+    .card p{
+        /* font-size: .9rem; */
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
-}
-@media screen and
-(max-width: 380px) and
-(orientation:portrait) {
-    /*estilo*/
 }
