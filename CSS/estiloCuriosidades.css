@@ -219,8 +219,8 @@
         .navContainer{
             width: 100%;
             display: flex;
-            height: auto;
-            
+            /* height: auto; */
+            overflow: scroll;
         }
         .textNav{
             flex-wrap: wrap;
@@ -229,7 +229,7 @@
             flex-direction: column;
         }
 
-        .openDialog{
+        /* .openDialog{
             width: 100%;
             display: flex;
             height: auto; 
@@ -239,7 +239,7 @@
             width: 90%;
             justify-content: space-between;
             flex-direction: column;
-        }
+        } */
 
         /* .row{
             overflow: scroll;
