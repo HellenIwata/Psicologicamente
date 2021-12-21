@@ -105,13 +105,14 @@
         }
             .openDialog::-webkit-scrollbar{
                 background-color: #133530;
-                width: .7rem;
-                border-top-right-radius: .7rem;
-                border-bottom-right-radius: .7rem;
+                
+                height: 20%;
+                
             }
             .openDialog::-webkit-scrollbar-thumb{
                 background-color: #a4e2d7;
-                border-radius: 1rem;
+                border-radius: .5rem;
+                
             }
             .openDialog:target{
                 display: block;
@@ -210,16 +211,16 @@
         }
         .openDialog{
             flex-wrap: wrap;
-            width: 45%;
+            width: auto;
             justify-content: space-between;
         }
     }
     /*Largura de até 600px*/
-    @media only screen and (max-width:600px){
+    @media only screen and (max-width:425px){
         .navContainer{
             width: 100%;
             display: flex;
-            /* height: auto; */
+            height: auto;
             overflow: scroll;
         }
         .textNav{
@@ -227,49 +228,47 @@
             width: 100%;
             justify-content: space-between;
             flex-direction: column;
+            margin-top: 25px;
         }
 
-        /* .openDialog{
+        .openConteudo{
             width: 100%;
             display: flex;
-            height: auto; 
+            height: auto;
+            justify-content: center;
         }
-        .home{
+        .openDialog{
             flex-wrap: wrap;
-            width: 90%;
+            width: auto;
             justify-content: space-between;
-            flex-direction: column;
-        } */
-
-        /* .row{
-            overflow: scroll;
-            flex-direction: column;
-            display: flex;
-            height: 200px;
-            background-color: firebrick;
         }
-        .col-8{
-            background-color:blue;
+        /*inicio Resposividade areas de atuação lista */
+        div.col-4.listaAreas{
+            margin-top: 10px;
             width: 100%;
-            flex-wrap: wrap;
         }
-        .col-4{
-            background-color: darkgreen;
+
+        .home  div.col-8{
+            margin-top: 20px;
             width: 100%;
-            
         }
-        .row::-webkit-scrollbar{
-            background-color: #133530;
-            width: .5rem;
+        /* Fim resposividade areas de atuação */
+
+        /* Inicio responsividade tipos de transtornos */
+        div.col-2.listaAreas{
+            margin-top: 10px;
+            width: 100%;
         }
-        .row::-webkit-scrollbar-thumb{
-            background-color: #a4e2d7;
-            border-radius: .9rem;
-            height: 5%;
-        } */
-    }
 
-    
+        div.col-3.listaAreas{
+            margin-top: 10px;
+            width: 100%;
+        }
+        /* Fim tipos de transtornos */
 
-    
+        div.col-3.listaAreas{
+            margin-top: 10px;
+            width: 100%;
+        }
+    }    
 /*Fim estilização página Curiosidades*/
