@@ -14,3 +14,6 @@
    
 4. ***Estabeleça prazos.***
    - Este passo se trata de uma análise de um trabalho já realizado para entender quanto tempo ele leva.
+
+# Link apresentação no canva
+***https://www.canva.com/design/DAEy19PQgb4/F7DyJFtjd8BKQQLeInTH1w/view?utm_content=DAEy19PQgb4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink***
